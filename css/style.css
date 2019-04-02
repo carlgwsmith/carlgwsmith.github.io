@@ -84,7 +84,11 @@ li.light-text{
 }
 
 .parallax__cover {
-  background:#2d112b;
+  background: rgb(45,17,43);
+  background: -moz-linear-gradient(top, rgba(45,17,43,1) 0%, rgba(22,5,5,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(45,17,43,1) 0%,rgba(22,5,5,1) 100%);
+  background: linear-gradient(to bottom, rgba(45,17,43,1) 0%,rgba(22,5,5,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d112b', endColorstr='#160505',GradientType=0 );
   display: block;
   position: absolute;
   top: 100%;
@@ -157,39 +161,11 @@ li.light-text{
 }
 }
 
-/** LIGHTBOX MARKUP **/
-
-.lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-
-	/** Position and style */
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-}
-
-.lightbox img {
-	/** Pad the lightbox image */
-	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
-}
-
-.lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-
-	/** Unhide lightbox **/
-	display: block;
-}
 
 .listsubtext{
   font-family:'Oswald', sans-serif !important;
-  font-weight:400;
+  font-weight:400 !important;
+  font-size:.75em !important;
 }
+
+
