@@ -188,3 +188,8 @@ li.light-text{
 	/** Unhide lightbox **/
 	display: block;
 }
+
+.listsubtext{
+  font-family:'Oswald', sans-serif !important;
+  font-weight:400;
+}
