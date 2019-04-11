@@ -27,6 +27,11 @@
   font-size:6em;
   margin-top:4%;
 } 
+.col.overview{
+  text-align:center;
+  color:white;
+  
+}
 
 .col.introright{
   font-family:'Oswald', sans-serif!important;
