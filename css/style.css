@@ -38,6 +38,7 @@
 .divider{
   width:25%;
   border-bottom: 2px white solid;
+  left:40% !important;
 }
 
 .col.introright{
