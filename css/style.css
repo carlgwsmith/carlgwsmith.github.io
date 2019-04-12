@@ -34,11 +34,7 @@
   font-size:1.5em !important;
   padding-top:32px;
   left:40% !important;
-}
-.divider{
-  width:25%;
-  border-bottom: 2px white solid;
-  left:40% !important;
+  text-decoration-line: underline;
 }
 
 .col.introright{
