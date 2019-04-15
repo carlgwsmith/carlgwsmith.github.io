@@ -68,7 +68,7 @@ li.light-text{
           perspective: 100px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   position: absolute;
   top: 10%;
   left: 50%;
