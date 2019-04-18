@@ -130,6 +130,11 @@ li.light-text{
           transform: translateZ(-100px) scale(2);
 }
 
+.parallax__layer__4.5 {
+  -webkit-transform: translateZ(-100px);
+          transform: translateZ(-100px);
+}
+
 .parallax__layer__5 {
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
