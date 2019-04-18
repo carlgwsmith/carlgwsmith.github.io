@@ -130,9 +130,11 @@ li.light-text{
           transform: translateZ(-100px) scale(2);
 }
 
-.parallax__layer__4.5 {
-  -webkit-transform: translateZ(-100px);
-          transform: translateZ(-100px);
+.parallax__layer__4a {
+  z-index:0;
+  margin-left:60%;
+  margin-top:20%;
+  position:fixed;
 }
 
 .parallax__layer__5 {
@@ -168,8 +170,7 @@ li.light-text{
 @media screen and (max-width: 1000px){
   .col.introtext{
     font-size:4em;
-    padding-top:4%;
-    
+    padding-top:4%;   
 }
 }
 
@@ -181,3 +182,48 @@ li.light-text{
 }
 
 
+/*Particles*/
+
+#particle1{
+  animation: move 4s infinite;
+}
+
+@keyframes move{
+  0%{
+    transform: scale(5);
+  }
+  100%{
+    transform:scale(0);
+  }
+}
+#particle2{
+  animation: move2 3s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes move2{
+  0%{
+    transform: scale(5);
+  }
+  100%{
+    transform:scale(0);
+    color:white;
+    transform:translateY(100px;)
+  }
+}
+#particle3{
+  animation: move3 2.5s infinite;
+  animation-delay: .5s;
+}
+
+@keyframes move3{
+  0%{
+    transform: translateX(1000px;);
+    translateZ
+  }
+  100%{
+    transform:scale(0);
+    color:white;
+    transform:translateY(100px;)
+  }
+}
