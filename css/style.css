@@ -156,8 +156,8 @@ li.light-text{
     padding-top:5%;
     
   }
-  .col.bodycontent{
-    
+  .col-6.bodycontent{
+    background-color:black;
   }
   .parallax{
     height: 100vh;
