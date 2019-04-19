@@ -156,8 +156,12 @@ li.light-text{
     padding-top:5%;
     
   }
+  .col.overview{
+    font-size:15px;
+  }
   .col-6.bodycontent{
     background-color:black;
+    left:0% !important;
   }
   .parallax{
     height: 100vh;
@@ -208,7 +212,7 @@ li.light-text{
   100%{
     transform:scale(0);
     color:white;
-    transform:translateY(100px;)
+    transform:translateY(100px);
   }
 }
 #particle3{
@@ -218,12 +222,11 @@ li.light-text{
 
 @keyframes move3{
   0%{
-    transform: translateX(1000px;);
-    translateZ
+    transform: translateX(1000px);
   }
   100%{
     transform:scale(0);
     color:white;
-    transform:translateY(100px;)
+    transform:translateY(100px);
   }
 }
