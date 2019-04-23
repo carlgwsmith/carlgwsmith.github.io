@@ -148,7 +148,7 @@ li.light-text{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 700px){
+@media screen and (min-width: 700px){
   .col.introtext{
     font-size:5em;    
 }
@@ -170,10 +170,12 @@ li.light-text{
     height:600px;
     padding-top:20px;
   }
-  navbar-brand{
+  .navbar-brand{
     display:none;
   }
-
+  .col.introtext{
+    font-size:18px;
+  }
 
 }
 @media screen and (max-width: 1000px){
