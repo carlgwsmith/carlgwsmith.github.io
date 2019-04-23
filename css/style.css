@@ -190,14 +190,19 @@ li.light-text{
     padding-left:15px; 
     flex-basis:auto; 
 }
-}
+  .navbar-brand{
+    display:none;
+  }
 
+
+}
 
 .listsubtext{
   font-family:'Oswald', sans-serif !important;
   font-weight:400 !important;
   font-size:.75em !important;
 }
+
 
 
 /*Particles*/
