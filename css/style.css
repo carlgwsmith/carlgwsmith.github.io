@@ -172,7 +172,7 @@ li.light-text{
     padding-top:20px;
   }
   .navbar-brand{
-    display:none;
+    display:none!important;
   }
   .col.introtext{
     font-size:4em;
