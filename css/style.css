@@ -165,6 +165,7 @@ li.light-text{
   }
   .parallax{
     height: 100vh;
+    padding-top:50px;
   }
   .parallax__cover{
     height:600px;
