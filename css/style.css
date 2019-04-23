@@ -186,6 +186,12 @@ li.light-text{
     padding-left:15px;
     flex-basis:auto;
   }
+  .parallax__layer__4a {
+    z-index:0;
+    margin-left:80%;
+    margin-top:13%;
+    position:fixed;
+  }
 
 }
 @media screen and (max-width: 1000px){
