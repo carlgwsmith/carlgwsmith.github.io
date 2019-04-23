@@ -175,7 +175,9 @@ li.light-text{
     display:none;
   }
   .col.introtext{
-    font-size:18px;
+    font-size:4em;
+    padding-right: 0px;
+    padding-left:15px;
   }
 
 }
