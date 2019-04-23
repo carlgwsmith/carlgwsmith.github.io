@@ -191,7 +191,7 @@ li.light-text{
     flex-basis:auto; 
 }
   .navbar-brand{
-    display:none;
+    display:none!important;
   }
   .parallax{
     margin-top:245px;
