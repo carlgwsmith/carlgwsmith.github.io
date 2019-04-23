@@ -148,7 +148,7 @@ li.light-text{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
   .col.introtext{
     font-size:5em;    
 }
@@ -170,7 +170,7 @@ li.light-text{
     height:600px;
     padding-top:20px;
   }
-  .carllogo{
+  navbar-brand{
     display:none;
   }
 
