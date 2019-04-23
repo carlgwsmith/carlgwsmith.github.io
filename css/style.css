@@ -190,7 +190,7 @@ li.light-text{
 }
 @media screen and (max-width: 1000px){
   .col.introtext{
-    font-size:4em;
+    font-size:3em;
     padding-top:10%;
     padding-right: 0px;
     padding-left:15px; 
@@ -207,7 +207,7 @@ li.light-text{
 }
 @media screen and (max-width: 1200px){
   .col.introtext{
-    font-size:5em;
+    font-size:3em;
     padding-top:10%;
     padding-right: 0px;
     padding-left:15px; 
