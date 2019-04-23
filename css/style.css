@@ -170,6 +170,9 @@ li.light-text{
     height:600px;
     padding-top:20px;
   }
+  .carllogo{
+    display:none;
+  }
 
 
 }
