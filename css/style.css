@@ -168,7 +168,9 @@ li.light-text{
   }
   .parallax__cover{
     height:600px;
+    padding-top:20px;
   }
+
 
 }
 @media screen and (max-width: 1000px){
