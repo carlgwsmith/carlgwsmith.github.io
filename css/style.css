@@ -65,6 +65,7 @@ li.light-text{
 
 .gallery{
   margin: 10px 50px;
+  padding-top:50px;
 }
 .gallery img{
   transition: 1s;
