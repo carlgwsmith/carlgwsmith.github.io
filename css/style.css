@@ -73,7 +73,7 @@ li.light-text{
 }
 .gallery img:hover{
   filter:grayscale(80%);
-  transform: scale(1:1.2);
+  transform: scale(1.1);
 }
 
 .parallax {
