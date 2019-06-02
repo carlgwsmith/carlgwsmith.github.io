@@ -63,6 +63,20 @@ li.light-text{
   position:relative;
 }
 
+.gallery{
+  margin: 10px 50px;
+  padding-top:50px;
+}
+.gallery img{
+  transition: .3s;
+  padding: 15px;
+  width:280px;
+}
+.gallery img:hover{
+  filter:grayscale(100%);
+  transform: scale(1.2);
+}
+
 .parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
@@ -130,6 +144,13 @@ li.light-text{
           transform: translateZ(-100px) scale(2);
 }
 
+.parallax__layer__4a {
+  z-index:0;
+  margin-left:60%;
+  margin-top:20%;
+  position:fixed;
+}
+
 .parallax__layer__5 {
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
@@ -138,6 +159,12 @@ li.light-text{
 .parallax__layer__6 {
   -webkit-transform: translateZ(0px) scale(1);
           transform: translateZ(0px) scale(1);
+}
+
+.listsubtext{
+  font-family:'Oswald', sans-serif !important;
+  font-weight:400 !important;
+  font-size:.75em !important;
 }
 
 /* MEDIA QUERIES */
@@ -149,14 +176,34 @@ li.light-text{
     padding-top:5%;
     
   }
-  .col.bodycontent{
-    display:none;
+  .col.overview{
+    font-size:15px;
+  }
+  .col-6.bodycontent{
+    background-color:black;
+    left:0% !important;
   }
   .parallax{
     height: 100vh;
+    padding-top:50px;
   }
   .parallax__cover{
-    height:200px;
+    height:600px;
+    padding-top:20px;
+  }
+  .navbar-brand{
+    display:none!important;
+  }
+  .col.introtext{
+    font-size:3em;
+    padding-right: 0px;
+    padding-left:15px;
+    flex-basis:auto;
+  }
+  .parallax__layer__4a {
+    z-index:0;
+    margin-left:20%;
+    margin-top:13%;
   }
 
 }
@@ -166,13 +213,61 @@ li.light-text{
     padding-top:4%;
     
 }
+  .navbar-brand{
+    display:none!important;
+  }
+  .parallax{
+    height:120vh;
+  }
+
+
 }
 
 
-.listsubtext{
-  font-family:'Oswald', sans-serif !important;
-  font-weight:400 !important;
-  font-size:.75em !important;
+
+
+
+/*Particles*/
+
+#particle1{
+  animation: move 4s infinite;
 }
 
+@keyframes move{
+  0%{
+    transform: scale(5);
+  }
+  100%{
+    transform:scale(0);
+  }
+}
+#particle2{
+  animation: move2 3s infinite;
+  animation-delay: 1s;
+}
 
+@keyframes move2{
+  0%{
+    transform: scale(5);
+  }
+  100%{
+    transform:scale(0);
+    color:white;
+    transform:translateY(100px);
+  }
+}
+#particle3{
+  animation: move3 2.5s infinite;
+  animation-delay: .5s;
+}
+
+@keyframes move3{
+  0%{
+    transform: translateX(1000px);
+  }
+  100%{
+    transform:scale(0);
+    color:white;
+    transform:translateY(100px);
+  }
+}
