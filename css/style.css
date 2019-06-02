@@ -33,7 +33,7 @@
   font-family:'Oswald', sans-serif !important;
   font-size:1.5em !important;
   padding-top:32px;
-  left:50% !important;
+  left:40% !important;
 }
 
 .col.introright{
@@ -51,7 +51,7 @@ div.col-6.bodycontent{
 }
 
 ul.education{
-  font-size:1em !important;
+  font-size:.80em !important;
   font-family:'Lato', sans-serif !important;
   list-style:none;
   font-weight:600;
