@@ -227,11 +227,20 @@ li.light-text{
 @media screen and (max-width: 1200px){
   .col.introtext{
     font-size:7em;
-    padding-top:4%;
-    
- }
+    padding-top:10%;
+    padding-right: 0px;
+    padding-left:15px; 
+    flex-basis:auto; 
 }
+  .navbar-brand{
+    display:none!important;
+  }
+  .parallax{
+    height:120vh;
+  }
 
+
+}
 
 /*Particles*/
 
