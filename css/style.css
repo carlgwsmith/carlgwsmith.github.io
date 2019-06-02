@@ -219,7 +219,10 @@ li.light-text{
   .parallax{
     height:120vh;
   }
-
+.row {
+  flex-wrap: nowrap !important;
+  margin-right:30px !important;
+}
 
 }
 
