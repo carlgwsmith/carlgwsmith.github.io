@@ -168,7 +168,7 @@ li.light-text{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 700px){
+/* @media screen and (max-width: 700px){
   .col.introtext{
     font-size:5em;    
 }
@@ -181,8 +181,14 @@ li.light-text{
   }
   .col-6.bodycontent{
     background-color:black;
-    left:0% !important;
+    left:90% !important;
+    font-size:1em !important;
   }
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 86%;
+    max-width: 59%;
+}
   .parallax{
     height: 100vh;
     padding-top:50px;
@@ -205,6 +211,10 @@ li.light-text{
     margin-left:20%;
     margin-top:13%;
   }
+  .row {
+    flex-wrap: nowrap !important;
+    margin-right:500px !important;
+  }
 
 }
 @media screen and (max-width: 1000px){
@@ -221,11 +231,11 @@ li.light-text{
   }
 .row {
   flex-wrap: nowrap !important;
-  margin-right:30px !important;
+  margin-right:120px !important;
 }
 
 }
-
+ */
 
 @media screen and (max-width: 1200px){
   .col.introtext{
