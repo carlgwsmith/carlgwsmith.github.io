@@ -33,7 +33,7 @@
   font-family:'Oswald', sans-serif !important;
   font-size:1.5em !important;
   padding-top:32px;
-  left:50% !important;
+  left:40% !important;
 }
 
 .col.introright{
@@ -51,7 +51,7 @@ div.col-6.bodycontent{
 }
 
 ul.education{
-  font-size:1em !important;
+  font-size:.80em !important;
   font-family:'Lato', sans-serif !important;
   list-style:none;
   font-weight:600;
@@ -168,7 +168,7 @@ li.light-text{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 700px){
+/* @media screen and (max-width: 700px){
   .col.introtext{
     font-size:5em;    
 }
@@ -181,8 +181,18 @@ li.light-text{
   }
   div.col-6.bodycontent{
     background-color:black;
+<<<<<<< HEAD
     left:0%;
+=======
+    left:90% !important;
+    font-size:1em !important;
+>>>>>>> 72d1b6fd56967eb8157cbb38e899d2efa6e5a856
   }
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 86%;
+    max-width: 59%;
+}
   .parallax{
     height: 100vh;
     padding-top:50px;
@@ -205,15 +215,17 @@ li.light-text{
     margin-left:20%;
     margin-top:13%;
   }
+  .row {
+    flex-wrap: nowrap !important;
+    margin-right:500px !important;
+  }
 
 }
 @media screen and (max-width: 1000px){
   .col.introtext{
-    font-size:3em;
-    padding-top:10%;
-    padding-right: 0px;
-    padding-left:15px; 
-    flex-basis:auto; 
+    font-size:5em;
+    padding-top:4%;
+    
 }
   .navbar-brand{
     display:none!important;
@@ -221,11 +233,17 @@ li.light-text{
   .parallax{
     height:120vh;
   }
+.row {
+  flex-wrap: nowrap !important;
+  margin-right:120px !important;
+}
 
 }
+ */
+
 @media screen and (max-width: 1200px){
   .col.introtext{
-    font-size:3em;
+    font-size:7em;
     padding-top:10%;
     padding-right: 0px;
     padding-left:15px; 
@@ -240,10 +258,6 @@ li.light-text{
 
 
 }
-
-
-
-
 
 /*Particles*/
 
