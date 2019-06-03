@@ -301,6 +301,13 @@
     margin-left:72.5%;
     margin-top:6%;
   }
+  .col.introtext{
+    font-size:4em;
+    padding-top:10%;
+    padding-right: 0px;
+    padding-left:15px; 
+    flex-basis:auto; 
+}
   .parallax{
     margin-top:-10%;
   }
