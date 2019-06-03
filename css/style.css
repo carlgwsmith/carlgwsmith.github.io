@@ -330,4 +330,7 @@
     flex-basis:auto; 
     color:blue;
 }
+.parallax{
+  height:100vh;
+}
 }
