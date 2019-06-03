@@ -45,9 +45,9 @@
 div.col-6.bodycontent{
   color:white !important;
   font-family:'Oswald', sans-serif !important;
-  font-size:1.5em !important;
-  left:40% !important;
-  padding-top:40px !important;
+  font-size:1.5em;
+  left:40%;
+  padding-top:40px;
 }
 
 ul.education{
@@ -179,9 +179,9 @@ li.light-text{
   .col.overview{
     font-size:15px;
   }
-  .col-6.bodycontent{
+  div.col-6.bodycontent{
     background-color:black;
-    left:0% !important;
+    left:0%;
   }
   .parallax{
     height: 100vh;
