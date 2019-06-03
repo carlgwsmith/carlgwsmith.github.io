@@ -305,3 +305,22 @@
     margin-top:-10%;
   }
 }
+@media screen and (max-width: 400px){
+
+  .thanks{
+    color:white;
+    z-index: 2;
+    margin-left:72.5%;
+    margin-top:6%;
+  }
+  .parallax{
+    margin-top:-10%;
+  }
+  .col.introtext{
+    font-size:4em;
+    padding-top:10%;
+    padding-right: 0px;
+    padding-left:15px; 
+    flex-basis:auto; 
+}
+}
