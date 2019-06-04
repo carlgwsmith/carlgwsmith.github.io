@@ -204,6 +204,21 @@
     transform:translateY(100px);
   }
 }
+#particle4{
+  animation: move3 2.5s infinite;
+  animation-delay: .5s;
+}
+
+@keyframes move3{
+  0%{
+    transform: translateX(1000px);
+  }
+  100%{
+    transform:scale(0);
+    color:white;
+    transform:translateY(100px);
+  }
+}
 
 
 /* MEDIA QUERIES */
