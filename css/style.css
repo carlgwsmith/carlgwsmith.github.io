@@ -72,9 +72,56 @@
 .centerfy{
   margin-left:6%;
 }
+#typed{
+  margin: 0 0 20px 50px;
+  font-size: 30px;
+  font-family: 'Lilita One', sans-serif;
+
+}
+.resumeheader{
+  /* border-bottom:1px solid black; */
+
+}
 .resumename{
-  margin: 0 auto;
-  font-size: 32px;
+  margin: 50px 0 0 50px;
+  font-size: 45px;
+  font-family: 'Lilita One', sans-serif;
+  animation: bordergrad 5s infinite;
+  border-bottom: 2px solid;
+  width:70%;
+}
+@keyframes bordergrad{
+  0%{
+    border-color:rgb(24, 196, 235);
+}
+  20%{
+    border-color:rgb(65, 199, 175);
+}
+  40%{
+    border-color:rgb(232, 227, 77);
+  }
+  60%{
+    border-color:rgb(244, 141, 76);
+  }
+  80%{
+    border-color:rgb(223, 41, 75);
+  }
+  100%{
+   border-color:rgb(24,196,235);
+  }
+}
+.resumebutton{
+  margin-top:50px;
+  margin-right:50px;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.education{
+  margin: 0 0 0 50px;
 }
 
 /* PARALLAX */

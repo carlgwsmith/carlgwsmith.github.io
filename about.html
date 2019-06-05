@@ -18,6 +18,7 @@
         <script src="js/index.js"></script>
         <script src="js/lightbox-plus-jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/dd3eafd80a.js"></script>
+        <script src="js/typed.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Playfair+Display:400,900|Lato:300,400,700|Lilita+One" rel="stylesheet">
 
@@ -28,7 +29,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
           <a class="navbar-brand" href="#">
               <img src="img/CARLCO_logo.png" alt="CARL CO Logo" class="d-inline-block align-top">
-              <div class="logotext">CARL G.W. SMITH</div>
+              <div class="logotext" >CARL G.W. SMITH</div>
+              
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,12 +61,46 @@
         <!-- END OF NAV -->
       <div class="row">
     <div class="col">
-      Carl G.W. Smith
+      <h2 class="resumename">Carl G.W. Smith</h2>
+      <div id="typed"></div>
+
     </div>
     <div class="col">
-      <i class="fas fa-arrow-alt-circle-down"></i>
+      <button type="button" class="btn btn-primary btn-lg resumebutton float-right"><i class="fas fa-arrow-alt-circle-down"></i> PDF Resume Download</button>
     </div>
   </div>
+  <div class="row">
+    <div class="col education">
+      <h3 class="resumeheader">Education</h3>
+      <div class="mt-3"></div>
+        Washburn University | BFA Graphic and Digital Design
+    </br>
+        <strong>2017 Graduate</strong>
+    <div class="mt-5"></div>
+        JCCC | Software Development Certificate
+      </br>
+          <strong>Seeking Currently</strong>
+
+    </div>
+    <div class="col"></div>
+  </div>
+
+
+
+
+
+
+
+
+<script>
+  var typed = new Typed('#typed', {
+    strings: ['Graphic Designer', 'Web Developer', 'Musician'],
+    typeSpeed: 90,
+    backSpeed: 30,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+  </script>
 
     </body>
 </HTML>
