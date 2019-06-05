@@ -36,10 +36,3 @@ $(window).scroll(function() {
     });
   })(jQuery);
 
-  var typed = new Typed('#typed', {
-    strings: ['Designer', 'Developer'],
-    typeSpeed: 90,
-    backSpeed: 30,
-    smartBackspace: true, // this is a default
-    loop: true
-  });
