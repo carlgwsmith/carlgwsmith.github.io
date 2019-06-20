@@ -19,10 +19,11 @@ html, body {
     height: 100%;
     grid-gap:5px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px 40px 40px 40px auto auto 100px;
+    grid-template-rows: 40px 70px 50px 40px 40px auto auto 100px;
     grid-template-areas: 
       "h h h m m m m m m o o o"
       "s s s . . . . . . dl dl dl"
+      "n n n n n n n n n n n n"
       ". . . . . . . . . . . . "
       "at at at at sft sft sft sft sft st st st"
       "a a a a sf sf sf sf sf ss ss ss"
@@ -35,6 +36,77 @@ html, body {
 .header{
   grid-area: h;
 }
+
+/* Nav */
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #abc;
+}
+
+
+.nav{
+  grid-area:n;
+  border-bottom:1px solid black;
+}
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #abc;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '\f1cb';
+}
+
+label[for*='2']:before {
+  content: '\f17d';
+}
+
+label[for*='3']:before {
+  content: '\f16c';
+}
+
+label[for*='4']:before {
+  content: '\f171';
+}
+
+label:hover {
+  color: #789;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #0af;
+  border: 1px solid #abc;
+  border-top: 2px solid #0af;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+/* End of Nav */
+
 
 .maintitle{
   font-weight:700;
@@ -61,7 +133,8 @@ text-align:center;
 }
 .dashlogo{
   grid-area:dl;
-  padding: 15px;
+  height:50px;
+  margin-top:0;
 }
 
 .menu{
@@ -77,6 +150,7 @@ text-align:center;
   letter-spacing: .2em;
   font-weight:700;
   text-align:Center;
+  align-items:flex-end;
 }
 
 .menutitle{
