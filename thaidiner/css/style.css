@@ -21,7 +21,7 @@ html, body {
     grid-template-columns: repeat(12, 1fr);
           grid-template-rows: 40px 70px 50px;
     grid-template-areas: 
-      "h h h m m m m m m o o o"
+      "h h h hrs hrs hrs hrs hrs hrs o o o"
       "s s s . . . . . . dl dl dl"
       "n n n n n n n n n n n n"
       ;      
@@ -45,23 +45,11 @@ html, body {
 
     ;      
 }
-.appetizer{
-  grid-area: a;
-}
 
 .header{
   grid-area: h;
 }
 
-.sfcontent{
-  grid-area: sf;
-  line-height:1.65em;
-
-}
-
-.tabContent {
-  display:none;
-}
 
 /* Nav */
 
@@ -70,31 +58,7 @@ html, body {
   grid-area:n;
   border-bottom:1px solid black;
 }
-input {
-  display: none;
-}
 
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #abc;
-  border: 1px solid transparent;
-}
-
-label:hover {
-  color: rgb(128, 128, 128);
-  cursor: pointer;
-}
-
-input:checked + label{
-  color: rgb(255, 38, 0);
-  border: 1px solid #abc;
-  border-top: 2px solid rgb(255, 38, 0);
-  border-bottom: 1px solid #fff;
-}
 
 
 /* End of Nav */
@@ -108,8 +72,8 @@ input:checked + label{
   letter-spacing: .12em;
 }
 
-.menu{
-  grid-area: m;
+.hours{
+  grid-area: hrs;
   align-items:flex-end;
 }
 
@@ -134,10 +98,6 @@ text-align:center;
   margin-top:0;
 }
 
-.apps ul {
-  list-style-type: none;
-}
-
 .onlineorder{
   grid-area: o;
   font-size:1em;
@@ -148,65 +108,57 @@ text-align:center;
   align-items:flex-end;
 }
 
-.menutitle{
-  text-decoration:underline;
-  font-size:1.5em;
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #abc;
 }
 
-.dishtitle{
-  font-family: 'Fjalla One', sans-serif;
+input {
+  display: none;
 }
 
-.appstitle{
-  grid-area: at;
-  margin:0;
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #abc;
+  border: 1px solid transparent;
 }
 
-.saladtitle{
-  grid-area: st;
-  margin:0;
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
 }
 
-.sftitle{
-  grid-area: sft;
-  margin:0;
+label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16c'; }
+label[for*='4']:before { content: '\f171'; }
+
+label:hover {
+  color: #789;
+  cursor: pointer;
 }
 
-.noodtitle{
-  grid-area: nt;
-  margin:0;
+input:checked + label {
+  color: rgb(173, 14, 14);
+  border: 1px solid #abc;
+  border-top: 2px solid rgb(173,14,14);
+  border-bottom: 1px solid #fff;
 }
 
-.drinktitle{
-  grid-area: dt;
-  margin:0;
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
 }
 
-.apps{
-  grid-area: a;  
-}
-
-.stirfryandcurry ul{
-    list-style-type: none;
-}
-
-.salads{
-  grid-area: ss;
-}
-
-.salads ul{
-  list-style-type:none;
-}
-
-.noodlesandrice{
-  grid-area: noods;
-  background-color:red;
-}
-
-.drink{
-  grid-area: drink;
-  background-color:red;
-}
 
 .footer{
   grid-area: f;
