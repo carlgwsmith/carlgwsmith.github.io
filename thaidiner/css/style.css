@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300,300i,700&display=swap');
+
+html, body {
+  box-sizing: border-box;
+  background-color:white;
+  height: 100%;
+  padding: 10px;
+  margin: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .container > div {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+.container{
+    display:grid;
+    height: 100%;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 40px 40px 40px auto auto 100px;
+    grid-template-areas: 
+      "h h h m m m m m m o o o"
+      "s s s . . . . . . dl dl dl"
+      ". . . . . . . . . . . . "
+      "at at at at sft sft sft sft sft st st st"
+      "a a a a sf sf sf sf sf ss ss ss"
+      "noods noods noods noods noods noods noods noods drink drink drink drink"
+      "f f f f f f f f f f f f"
+      ;
+
+}
+
+.header{
+  grid-area: h;
+}
+
+.maintitle{
+  font-weight:700;
+  font-size:2.2em;
+  margin:0;
+  text-transform:uppercase;
+  letter-spacing: .12em;
+}
+
+
+.subheader{
+grid-area: s;
+margin-top:-10px;
+}
+
+.subtitle{
+  font-weight:300;
+font-size:1em;
+color:rgb(46, 46, 46);
+text-transform:uppercase;
+letter-spacing: .6em;
+text-align:center;
+
+}
+.dashlogo{
+  grid-area:dl;
+  padding: 15px;
+}
+
+.menu{
+  grid-area: m;
+}
+.apps ul {
+  list-style-type: none;
+}
+.onlineorder{
+  grid-area: o;
+  font-size:1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight:700;
+  text-align:Center;
+}
+
+.menutitle{
+  text-decoration:underline;
+  font-size:1.5em;
+}
+.dishtitle{
+  font-family: 'Fjalla One', sans-serif;
+}
+.appstitle{
+  grid-area: at;
+  margin:0;
+}
+
+.saladtitle{
+  grid-area: st;
+  margin:0;
+}
+.sftitle{
+  grid-area: sft;
+  margin:0;
+}
+.noodtitle{
+  grid-area: nt;
+  margin:0;
+}
+.drinktitle{
+  grid-area: dt;
+  margin:0;
+}
+.apps{
+  grid-area: a;
+    
+}
+.stirfryandcurry{
+  grid-area: sf;
+  line-height:1.65em;
+}
+.stirfryandcurry ul{
+    list-style-type: none;
+}
+
+.salads{
+  grid-area: ss;
+}
+.salads ul{
+  list-style-type:none;
+}
+.noodlesandrice{
+  grid-area: noods;
+  background-color:red;
+}
+.drink{
+  grid-area: drink;
+  background-color:red;
+}
+
+.footer{
+  grid-area: f;
+  background-color:red;
+}
