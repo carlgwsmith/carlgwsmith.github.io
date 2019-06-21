@@ -53,6 +53,37 @@ nav {
     margin-left:20px;
 
   }
+/* 
+  MAIN CONTAINER */
+  .main > div {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .main{
+    display:grid;
+    height: 75%;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+      "s s s s s s s s s s s s"
+      ;      
+}
+    .starters{
+        grid-area:s;
+        line-height:1.5em;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .starters ul li{
+        list-style-type:none;
+    }
+    .starters li{
+        padding-bottom:10px;
+    }
+    .dishtitle{
+        font-size:1.3em;
+    }
 
   @media only screen and (max-width: 1025px) {
     .burger-menu {
