@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300,300i,700&display=swap');
+
+.nav-container {
+    width: 100%;
+  }
+
+nav {
+    max-width: 1720px;
+    margin: 0 auto;
+    display: grid;
+    padding:20px;
+    grid-gap:5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    transition: .3s all ease-in-out;
+    color:black;
+  }
+  nav a:hover {
+    opacity: .5;
+  }
+
+  .right-menu {
+    grid-column: 3;
+    align-self:center;
+  }
+  .right-menu a{
+    padding: 10px 0;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  .logo {
+    grid-column: 1;
+    font-size:40px;
+    padding:1rem;
+  }
+
+  #nav-toggle, .burger-menu {
+    display: none;
+  }
+
+  .burger-menu {
+    width: 40px;
+    height:40px;
+    grid-column:3;
+    align-self:center;
+    margin-left:20px;
+
+  }
+
+  @media only screen and (max-width: 1025px) {
+    .burger-menu {
+      display: inline-block;
+    }
+
+    .right-menu {
+      display: none;
+    }
+    #nav-toggle:checked ~ .right-menu {
+        display: grid;
+        grid-row: 2;
+        background-color:rgb(206, 78, 78);
+        color:white;
+        align-items:center;
+        padding:10px 22px 10px 5px;
+        
+      }
+      nav .right-menu a{
+        color:white;
+      }
+  }
