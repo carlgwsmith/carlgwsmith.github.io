@@ -66,10 +66,22 @@ nav {
     height: 75%;
     grid-gap:5px;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 100px auto 100px;
     grid-template-areas: 
+      ". mt mt mt mt mt . . . . . ."
       "s s s s s s s s s s s s"
-      ;      
+      "s s s s s s s s s s s s";
+      background-color:rgb(226, 226, 247);
+           
 }
+    .menutitle{
+        font-size:2em;
+        font-family:'Fjalla One', sans-serif;
+        text-transform: uppercase;
+        grid-area:mt;
+        align-items:flex-end;
+        
+    }
     .starters{
         grid-area:s;
         line-height:1.5em;
@@ -82,7 +94,8 @@ nav {
         padding-bottom:10px;
     }
     .dishtitle{
-        font-size:1.3em;
+        font-size:1em;
+        font-weight:700;
     }
 
   @media only screen and (max-width: 1025px) {
