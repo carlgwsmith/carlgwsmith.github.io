@@ -38,13 +38,19 @@ html, body {
   width:100%;
   grid-gap:5px;
   grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 70px 600px;
+        grid-template-rows: 70px 100px 100px 100px 200px;
   grid-template-areas: 
-    ". . . .  mt mt mt mt . . . . "
-    "ml ml ml ml ml ml ml ml ml ml ml ml"
-    ;
-    background-color:rgb(231, 231, 231);
-    
+    "mt mt mt mt mt mt mt mt mt mt mt mt "
+    "im im ml ml ml ml ml ml ml ml . ."
+    "im im ml ml ml ml ml ml ml ml . ."
+    ". . ml ml ml ml ml ml ml ml . ."
+    ". . ml ml ml ml ml ml ml ml . ."
+
+    ;    
+}
+
+.image-pop{
+  grid-area:im;
 }
 
 .menutitle{
@@ -57,6 +63,7 @@ html, body {
 .menulist{
   grid-area:ml;
   align-items:flex-start;
+  border: 1px dashed black;
 }
 .menulist ul li {
   list-style-type: none;
@@ -136,7 +143,6 @@ color:rgb(46, 46, 46);
 text-transform:uppercase;
 letter-spacing: .6em;
 text-align:center;
-
 }
 
 .dashlogo{
@@ -161,4 +167,62 @@ text-align:center;
   background-color:red;
 }
 
-http://jsfiddle.net/Gm8Dm/
+
+@media (max-width:900px) {
+  .nav{
+    display:grid;
+    height: 25%;
+    grid-gap:5px;
+    grid-template-rows: 40px 70px 120px;
+}
+.tabContainer .buttonContainer button{
+  height:100%;
+  font-size:1em;
+}
+
+  .maintitle{
+    font-weight:700;
+    font-size:1.5em;
+    margin:0;
+    text-transform:uppercase;
+    letter-spacing: .12em;
+  }
+  .subtitle{
+    font-weight:300;
+  font-size:1em;
+  color:rgb(46, 46, 46);
+  text-transform:uppercase;
+  letter-spacing: .3em;
+  text-align:center;
+  }
+  
+}
+@media (max-width:600px) {
+  .nav{
+    display:grid;
+    height: 25%;
+    grid-gap:5px;
+    grid-template-rows: 40px 70px 120px;
+}
+.tabContainer .buttonContainer button{
+  height:100%;
+  font-size:1em;
+}
+
+  .maintitle{
+    font-weight:700;
+    font-size:20px;
+    margin:0;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+  }
+  .subtitle{
+    font-weight:300;
+  font-size:.5em;
+  color:rgb(46, 46, 46);
+  text-transform:uppercase;
+  letter-spacing: .3em;
+  text-align:center;
+  }
+  
+}
