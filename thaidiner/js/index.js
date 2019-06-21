@@ -5,15 +5,13 @@
 //     show.style.visibility = "visible";
 //     hide.style.display = "none";
 // }
+function f1() {
+    alert("f1 called");
 
-
-function showStuff(element)  {
-    var tabContents = document.getElementsByClassName('tabContent');
-    for (var i = 0; i < tabContents.length; i++) { 
-        tabContents[i].style.display = 'none';
-    }
-
-    // change tabsX into tabs-X in order to find the correct tab content
-    var tabContentIdToShow = element.id.replace(/(\d)/g, '-$1');
-    document.getElementById(tabContentIdToShow).style.display = 'block';
+window.onload=function(){
+document.getElementById('starters').onclick = function fun(){
+    alert('test');
+    f1();
 }
+}
+

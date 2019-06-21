@@ -5,7 +5,7 @@ html, body {
   background-color:white;
   height: 100%;
   padding: 10px;
-  margin: 0px;
+  margin: 0 auto;
   font-family: 'Open Sans Condensed', sans-serif;
   }
   .nav > div {
@@ -34,16 +34,63 @@ html, body {
 
 .maincontain{
   display:grid;
-  height: 23%;
+  height: 100%;
+  width:100%;
   grid-gap:5px;
   grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 40px 70px 50px;
+        grid-template-rows: 70px 600px;
   grid-template-areas: 
-      ". . . . a a a a a a . ."
-      ". . . . a a a a a a . ."
-      "f f f f f f f f f f f f"
+    ". . . .  mt mt mt mt . . . . "
+    "ml ml ml ml ml ml ml ml ml ml ml ml"
+    ;
+    background-color:rgb(231, 231, 231);
+    
+}
 
-    ;      
+.menutitle{
+  font-size:24px;
+  grid-area:mt;
+  text-decoration: underline;
+  align-items:flex-end;
+ 
+}
+.menulist{
+  grid-area:ml;
+  align-items:flex-start;
+}
+.menulist ul li {
+  list-style-type: none;
+}
+.dishtitle{
+  font-size:16px;
+  font-weight:700;
+  line-height:26px;
+}
+
+.tabContainer{
+  height:50px;
+}
+.tabContainer .buttonContainer{
+   height:100%;
+}
+.tabContainer .buttonContainer button{
+  height:100%;
+  width:240px;
+  font-size:1.3em;
+  border-top: 3px solid rgb(0, 0, 0);
+  border-left:  1px solid rgb(0, 0, 0);
+  border-right:  1px solid rgb(0, 0, 0);
+  border-bottom: 0;
+  box-shadow: 1px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  cursor: pointer;
+}
+.tabContainer .buttonContainer button:hover{
+  border-top: 3px solid rgb(204, 48, 48);
+}
+
+.maincontain .tabPanel{
+  font-size:22px;
 }
 
 .header{
@@ -59,9 +106,9 @@ html, body {
   border-bottom:1px solid black;
 }
 
-
-
 /* End of Nav */
+
+
 
 
 .maintitle{
