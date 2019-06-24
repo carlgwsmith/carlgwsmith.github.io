@@ -10,6 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/thaidiner/css/menu.css">
+        <script src="/thaidiner/js/jquery-3.4.1.min.js"></script>
+        <script src="/thaidiner/js/jquery.smoothscroll.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,8 +25,8 @@
                     <img src="/thaidiner/img/menu.png" alt="">
                   </label>
                   <div class="right-menu">
-                      <a href="#">Starters</a>
-                      <a href="#">Stir Fry & Curry</a>
+                      <a href="#apps">Starters</a>
+                      <a href="#stirfry">Stir Fry & Curry</a>
                       <a href="#">Noodles and Rice</a>
                       <a href="#">Salads</a>
                       <a href="#">Beverages</a>
@@ -32,7 +34,7 @@
                   
                 </nav>
             </div>
-        <div class="main">
+        <div class="main" id="apps">
             <div class="menutitle">Starters</div>
             <div class="starters">
                 <ul >
@@ -79,6 +81,189 @@
                         </ul>
                     </div>
         </div>
+        <div class="sfc" id="stirfry">
+           <div class="menutitle">Stir Fry and Curry</div>
+            <div class="stirfryandcurry">
+                    <ul >
+                            <li class="dishtitle">Fresh Basil Stirfry</li>
+                                <ul>
+                                    <li>Filled with crab meat, cream cheese, scallion, and sweet and sour sauce for dipping.</li>
+                                </ul>
+                            <li class="dishtitle">Curry Paste Passion</li>
+                                <ul>
+                                        <li>Filled with minced chicken, noodle, vegetables; served with sweet and sour sauce.</li>
+                                </ul>
+                            <li class="dishtitle">Cashew Nut Stir-Fry</li>
+                                <ul>
+                                        <li>Tofu in scallion-tempura batter with spicy sriracha sauce for dipping.</li>
+                                </ul>
+                            <li class="dishtitle">Thai Sweet Tropical</li>
+                                <ul>
+                                        <li>Tempura sweet potato fries served with sweet chili sauce.</li>
+                                </ul>
+                            <li class="dishtitle">Red Curry Bowl</li>
+                                <ul>
+                                        <li>Chicken and vegetables with scallion-soy dipping.</li>
+                                </ul>
+                            <li class="dishtitle">Green Curry Bowl</li>
+                                <ul>
+                                        <li>Tofu or chicken breast, noodle, oriental salad mix; served with peanut sauce.</li>
+                                </ul>
+                            <li class="dishtitle">Yellow Curry Bowl</li>
+                                <ul>
+                                        <li>Marinated with house garlic-cilantro seasonings with sweet chili sauce.</li>
+                                </ul>
+                            <li class="dishtitle">Massaman Curry Bowl</li>
+                                <ul>
+                                        <li>Herbal house broth, tomato, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                </ul>
+                            <li class="dishtitle">Panang Curry Bowl</li>
+                                <ul>
+                                        <li>Herbal coconut milk, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                </ul>
+                            </ul>
+                    </div>
+            </div>
+            <div class="noods">
+                    <div class="menutitle">Starters</div>
+                    <div class="starters">
+                        <ul >
+                                <li class="dishtitle">Popular Cheese Wontons</li>
+                                    <ul>
+                                        <li>Filled with crab meat, cream cheese, scallion, and sweet and sour sauce for dipping.</li>
+                                    </ul>
+                                <li class="dishtitle">Crispy Spring Rolls</li>
+                                    <ul>
+                                            <li>Filled with minced chicken, noodle, vegetables; served with sweet and sour sauce.</li>
+                                    </ul>
+                                <li class="dishtitle">Savory Golden Tofu</li>
+                                    <ul>
+                                            <li>Tofu in scallion-tempura batter with spicy sriracha sauce for dipping.</li>
+                                    </ul>
+                                <li class="dishtitle">Sweet Yam Sensation</li>
+                                    <ul>
+                                            <li>Tempura sweet potato fries served with sweet chili sauce.</li>
+                                    </ul>
+                                <li class="dishtitle">Steamed Dumplings</li>
+                                    <ul>
+                                            <li>Chicken and vegetables with scallion-soy dipping.</li>
+                                    </ul>
+                                <li class="dishtitle">Fresh Rice Wraps</li>
+                                    <ul>
+                                            <li>Tofu or chicken breast, noodle, oriental salad mix; served with peanut sauce.</li>
+                                    </ul>
+                                <li class="dishtitle">Grilled Chicken Skewers</li>
+                                    <ul>
+                                            <li>Marinated with house garlic-cilantro seasonings with sweet chili sauce.</li>
+                                    </ul>
+                                <li class="dishtitle">Tom Yum Soup Cup</li>
+                                    <ul>
+                                            <li>Herbal house broth, tomato, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                    </ul>
+                                <li class="dishtitle">Tom Kha Soup Cup</li>
+                                    <ul>
+                                            <li>Herbal coconut milk, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                    </ul>
+                                <li class="dishtitle">Mini Wonton Soup</li>
+                                    <ul>
+                                            <li>Chicken and vegetables mini wontons, celery, yellow onion, cilantro, scallion and roasted garlic.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                </div>
+                <div class="salads">
+                        <div class="menutitle">Starters</div>
+                        <div class="starters">
+                            <ul >
+                                    <li class="dishtitle">Popular Cheese Wontons</li>
+                                        <ul>
+                                            <li>Filled with crab meat, cream cheese, scallion, and sweet and sour sauce for dipping.</li>
+                                        </ul>
+                                    <li class="dishtitle">Crispy Spring Rolls</li>
+                                        <ul>
+                                                <li>Filled with minced chicken, noodle, vegetables; served with sweet and sour sauce.</li>
+                                        </ul>
+                                    <li class="dishtitle">Savory Golden Tofu</li>
+                                        <ul>
+                                                <li>Tofu in scallion-tempura batter with spicy sriracha sauce for dipping.</li>
+                                        </ul>
+                                    <li class="dishtitle">Sweet Yam Sensation</li>
+                                        <ul>
+                                                <li>Tempura sweet potato fries served with sweet chili sauce.</li>
+                                        </ul>
+                                    <li class="dishtitle">Steamed Dumplings</li>
+                                        <ul>
+                                                <li>Chicken and vegetables with scallion-soy dipping.</li>
+                                        </ul>
+                                    <li class="dishtitle">Fresh Rice Wraps</li>
+                                        <ul>
+                                                <li>Tofu or chicken breast, noodle, oriental salad mix; served with peanut sauce.</li>
+                                        </ul>
+                                    <li class="dishtitle">Grilled Chicken Skewers</li>
+                                        <ul>
+                                                <li>Marinated with house garlic-cilantro seasonings with sweet chili sauce.</li>
+                                        </ul>
+                                    <li class="dishtitle">Tom Yum Soup Cup</li>
+                                        <ul>
+                                                <li>Herbal house broth, tomato, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                        </ul>
+                                    <li class="dishtitle">Tom Kha Soup Cup</li>
+                                        <ul>
+                                                <li>Herbal coconut milk, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                        </ul>
+                                    <li class="dishtitle">Mini Wonton Soup</li>
+                                        <ul>
+                                                <li>Chicken and vegetables mini wontons, celery, yellow onion, cilantro, scallion and roasted garlic.</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                    </div><div class="bev">
+                            <div class="menutitle">Starters</div>
+                            <div class="starters">
+                                <ul >
+                                        <li class="dishtitle">Popular Cheese Wontons</li>
+                                            <ul>
+                                                <li>Filled with crab meat, cream cheese, scallion, and sweet and sour sauce for dipping.</li>
+                                            </ul>
+                                        <li class="dishtitle">Crispy Spring Rolls</li>
+                                            <ul>
+                                                    <li>Filled with minced chicken, noodle, vegetables; served with sweet and sour sauce.</li>
+                                            </ul>
+                                        <li class="dishtitle">Savory Golden Tofu</li>
+                                            <ul>
+                                                    <li>Tofu in scallion-tempura batter with spicy sriracha sauce for dipping.</li>
+                                            </ul>
+                                        <li class="dishtitle">Sweet Yam Sensation</li>
+                                            <ul>
+                                                    <li>Tempura sweet potato fries served with sweet chili sauce.</li>
+                                            </ul>
+                                        <li class="dishtitle">Steamed Dumplings</li>
+                                            <ul>
+                                                    <li>Chicken and vegetables with scallion-soy dipping.</li>
+                                            </ul>
+                                        <li class="dishtitle">Fresh Rice Wraps</li>
+                                            <ul>
+                                                    <li>Tofu or chicken breast, noodle, oriental salad mix; served with peanut sauce.</li>
+                                            </ul>
+                                        <li class="dishtitle">Grilled Chicken Skewers</li>
+                                            <ul>
+                                                    <li>Marinated with house garlic-cilantro seasonings with sweet chili sauce.</li>
+                                            </ul>
+                                        <li class="dishtitle">Tom Yum Soup Cup</li>
+                                            <ul>
+                                                    <li>Herbal house broth, tomato, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                            </ul>
+                                        <li class="dishtitle">Tom Kha Soup Cup</li>
+                                            <ul>
+                                                    <li>Herbal coconut milk, onion, mushroom, lime juice, scallion and cilantro.</li>
+                                            </ul>
+                                        <li class="dishtitle">Mini Wonton Soup</li>
+                                            <ul>
+                                                    <li>Chicken and vegetables mini wontons, celery, yellow onion, cilantro, scallion and roasted garlic.</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                        </div>
 
         <script src="" async defer></script>
     </body>
