@@ -97,8 +97,8 @@ nav {
     grid-template-rows: 100px 100px auto 20px;
     grid-template-areas: 
       ". mt mt mt mt mt mt mt . . . ."
-      ". . sf sf sf sf sf sf sf sf sf sf"
-      ". . sf sf sf sf sf sf sf sf sf sf"
+      "sf sf sf sf sf sf sf sf sf sf sf sf"
+      "sf sf sf sf sf sf sf sf sf sf sf sf"
       ". . . . . . . . . . . .";
       background-color:rgb(226, 228, 97);      
 }
@@ -130,8 +130,8 @@ nav {
     grid-template-rows: 100px 100px auto 20px;
     grid-template-areas: 
     ". mt mt mt mt mt mt mt . . . ."
-    ". . n n n n n n n n n n"
-    ". . n n n n n n n n n n "
+    "n n n n n n n n n n n n"
+    "n n n n n n n n n n n n "
     ". . . . . . . . . . . .";
     background-color:rgb(252, 178, 236);      
 }
@@ -162,8 +162,8 @@ nav {
     grid-template-rows: 100px 100px auto 20px;
     grid-template-areas: 
       ". mt mt mt mt mt . . . . . ."
-      ". . s s s s s s s s s s"
-      ". . s s s s s s s s s s"
+      "s s s s s s s s s s s s"
+      "s s s s s s s s s s s s"
       ". . . . . . . . . . . .";
       background-color:rgb(190, 255, 237);      
 }
@@ -194,8 +194,8 @@ nav {
     grid-template-rows: 100px 100px auto 20px;
     grid-template-areas: 
       ". mt mt mt mt mt . . . . . ."
-      ". . s s s s s s s s s s"
-      ". . s s s s s s s s s s";
+      "s s s s s s s s s s s s"
+      "s s s s s s s s s s s s";
       background-color:rgb(255, 202, 202);      
 }
 .beverages{
