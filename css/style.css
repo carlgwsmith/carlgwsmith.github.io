@@ -123,6 +123,13 @@
 .education{
   margin: 0 0 0 50px;
 }
+.unlist{
+  list-style-type:none;
+  padding-inline-start: 15px;
+}
+.typedcontain{
+  height:30px;
+}
 
 /* PARALLAX */
 
@@ -213,7 +220,7 @@
 
 /*Particles*/
 
-#particle1{
+/* #particle1{
   animation: move 4s infinite;
 }
 
@@ -269,7 +276,7 @@
     color:white;
     transform:translateY(100px);
   }
-}
+} */
 
 
 /* MEDIA QUERIES */
