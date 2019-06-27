@@ -78,10 +78,7 @@
   font-family: 'Lilita One', sans-serif;
 
 }
-.resumeheader{
-  /* border-bottom:1px solid black; */
 
-}
 .resumename{
   margin: 50px 0 0 50px;
   font-size: 45px;
@@ -113,6 +110,7 @@
 .resumebutton{
   margin-top:50px;
   margin-right:50px;
+  padding-bottom:30px;
 }
 
 @keyframes blink{
@@ -120,9 +118,9 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
-.education{
+/* .education{
   margin: 0 0 0 50px;
-}
+} */
 .unlist{
   list-style-type:none;
   padding-inline-start: 15px;
@@ -130,6 +128,52 @@
 .typedcontain{
   height:30px;
 }
+
+/* GRID */
+.main > div {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px 10px 50px 100px auto;
+  grid-template-areas: 
+  "b b b b b b b . . . . ."
+  ". . . . . . . . . . . ."
+  "e e e e e e s s s s s s"
+  "wu wu wu wu wu wu sl sl sl sl sl sl"
+  "jc jc jc jc jc jc sl sl sl sl sl sl"
+;
+}
+.skills{
+  grid-area:s;
+}
+.education{
+  grid-area:e;
+  margin: 0 0 0 50px;
+}
+.ed1{
+  grid-area:wu;
+  margin: 0 0 0 50px;
+}
+.ed2{
+  grid-area:jc;
+  margin: 0 0 0 50px;
+}
+.bio{
+  grid-area:b;
+  border-left: 2px black solid;
+  margin: 0 0 0 50px;
+  padding:0 0 0 20px;
+}
+.skilllist{
+  grid-area: sl;
+}
+
 
 /* PARALLAX */
 
