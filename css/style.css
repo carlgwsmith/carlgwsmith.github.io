@@ -140,7 +140,7 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 150px 10px 50px 100px auto;
+  grid-template-rows: 150px 20px 50px 100px auto;
   grid-template-areas: 
   "b b b b b b b . . . . ."
   ". . . . . . . . . . . ."
@@ -151,6 +151,7 @@
 }
 .skills{
   grid-area:s;
+  
 }
 .education{
   grid-area:e;
@@ -168,10 +169,11 @@
   grid-area:b;
   border-left: 2px black solid;
   margin: 0 0 0 50px;
-  padding:0 0 0 20px;
+  padding:0 0 0 30px;
 }
 .skilllist{
   grid-area: sl;
+  font-size:1.3em;
 }
 
 
