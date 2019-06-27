@@ -129,7 +129,7 @@
   height:30px;
 }
 
-/* GRID */
+/* ABOUT US GRID */
 .main > div {
   display: flex;
   /* justify-content: center; */
@@ -140,14 +140,13 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 150px 20px 50px 100px auto;
+  grid-template-rows: 15% 40px 50px 100px auto;
   grid-template-areas: 
   "b b b b b b b . . . . ."
   ". . . . . . . . . . . ."
   "e e e e e e s s s s s s"
   "wu wu wu wu wu wu sl sl sl sl sl sl"
-  "jc jc jc jc jc jc sl sl sl sl sl sl"
-;
+  "jc jc jc jc jc jc sl sl sl sl sl sl";
 }
 .skills{
   grid-area:s;
@@ -176,7 +175,32 @@
   font-size:1.3em;
 }
 
-
+/* CONTACT US GRID */
+.contactcontain > div {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.contactcontain {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 60px 100px 50px auto;
+  grid-template-areas:
+  ". . . . . . . . . . . ."
+  ". . . . ch ch ch ch . . . ."
+  "e e e e e e s s s s s s"
+  "wu wu wu wu wu wu sl sl sl sl sl sl";
+}
+.contacthead{
+  grid-area: ch;
+  justify-content: center;
+  font-family: 'oswald', sans-serif;
+  letter-spacing: .3em;
+  font-size:2.2em;
+  text-transform: uppercase;
+}
 /* PARALLAX */
 
 .parallax {
