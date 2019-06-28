@@ -453,16 +453,18 @@
     ;
   }
   .skills{
-    margin: 0 0 0 50px;
+    margin: 0 0 0 10px;
   }
   .skilllist{
-    margin: 0 0 0 50px;
+    margin: 0 0 0 10px;
   }
   .bio{
     font-size:1em;
+    margin: 0 0 0 10px;
   }
   .resumename{
     font-size:.8em;
+    margin: 0 0 0 10px;
   }
 
 }
