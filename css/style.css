@@ -194,7 +194,7 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 60px 80px 120px auto;
+  grid-template-rows: 40px 80px 120px auto;
   grid-template-areas:
   ". . . . . . . . . . . ."
   ". . . . ch ch ch ch . . . ."
@@ -206,8 +206,13 @@
   justify-content: center;
   font-family: 'oswald', sans-serif;
   letter-spacing: .2em;
-  font-size:2.2em;
+  font-size:3em;
   text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+textarea.form-control{
+  min-height:250px !important;
+  
 }
 .form{
   grid-area:f;
@@ -218,6 +223,7 @@
   text-align:center;
   font-size:1.4em;
   font-family:'oswald', sans-serif;
+  padding-top:20px;
 }
 /* PARALLAX */
 
