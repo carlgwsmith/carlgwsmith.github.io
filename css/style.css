@@ -79,15 +79,6 @@
 
 }
 
-.resumename{
-  margin: 50px 0 0 50px;
-  font-size: 45px;
-  font-family: 'Lilita One', sans-serif;
-  animation: bordergrad 5s infinite;
-  border-bottom: 2px solid;
-  width:70%;
-  margin: 0 0 0 50px;
-}
 @keyframes bordergrad{
   0%{
     border-color:rgb(24, 196, 235);
@@ -143,27 +134,30 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 40px 60px 40px 260px 50px 100px auto;
+  grid-template-rows: 40px 80px 40px 260px 50px 100px auto 0px ;
   grid-template-areas: 
   ". . . . . . . . . . . ."
-  "r r r . . . . . . . . ."
+  "r r r r r r r r . . . ."
   ". . . . . . . . . . . ."
   "b b b b b b b b b b . . "
-
   "e e e e e e s s s s s s"
   "wu wu wu wu wu wu sl sl sl sl sl sl"
-  "jc jc jc jc jc jc sl sl sl sl sl sl";
+  "jc jc jc jc jc jc sl sl sl sl sl sl"
+  ". . . . . . . . . . . .";
 }
 .skills{
   grid-area:s; 
+}
+.resumename{
+  font-size: 45px;
+  font-family: 'Lilita One', sans-serif;
+  animation: bordergrad 5s infinite;
+  border-bottom: 2px solid;
 }
 .resume{
   grid-area: r;
   font-size:2.7em;
   margin: 0 0 0 50px;
-  font-family: 'Lilita One', sans-serif;
-  animation: bordergrad 5s infinite;
-  border-bottom: 2px solid;
 }
 .education{
   grid-area:e;
@@ -440,6 +434,37 @@
   .mainthanks{
     margin-left:1%;
   }
+  .main {
+    height: 900px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 80px 40px 240px 60px 60px 100px 50px auto;
+    grid-template-areas: 
+    ". . . ."
+    "r r r r"
+    ". . . ."
+    "b b b b"
+    "e e e e"
+    "wu wu wu wu"
+    "jc jc jc jc"
+    "s s s s"
+    "sl sl sl sl"
+    ;
+  }
+  .skills{
+    margin: 0 0 0 50px;
+  }
+  .skilllist{
+    margin: 0 0 0 50px;
+  }
+  .bio{
+    font-size:1em;
+  }
+  .resumename{
+    font-size:.8em;
+  }
+
 }
 @media screen and (max-width: 900px){
 
@@ -449,6 +474,7 @@
     margin-left:66%;
     margin-top:6%;
   }
+
 }
 
 @media screen and (max-width: 700px){
