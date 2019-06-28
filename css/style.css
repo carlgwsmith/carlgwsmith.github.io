@@ -452,6 +452,15 @@
     "sl sl sl sl"
     ;
   }
+  .resume{
+    margin: 0 0 0 10px;
+  }
+  .bio{
+    margin: 0 0 0 10px;
+  }
+  .education{
+    margin: 0 0 0 10px;
+  }
   .skills{
     margin: 0 0 0 10px;
   }
