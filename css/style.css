@@ -406,6 +406,9 @@
     margin-left:59%;
     margin-top:6%;
   }
+    .bio{
+    font-size:1.5em;
+  }
 }
 
 @media screen and (max-width: 1200px){
@@ -455,9 +458,6 @@
   .resume{
     margin: 0 0 0 10px;
   }
-  .bio{
-    margin: 0 0 0 10px;
-  }
   .education{
     margin: 0 0 0 10px;
   }
@@ -465,11 +465,11 @@
     margin: 0 0 0 10px;
   }
   .skilllist{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 50px;
   }
   .bio{
-    font-size:1em;
-    margin: 0 0 0 10px;
+    font-size:1.5em;
+    margin: 0 30px 0 10px;
   }
   .resumename{
     font-size:.8em;
@@ -485,6 +485,10 @@
     margin-left:66%;
     margin-top:6%;
   }
+  .bio{
+    font-size:1.2em;
+    margin: 0 30px 0 10px;
+  }
 
 }
 
@@ -495,6 +499,10 @@
     z-index: 2;
     margin-left:70%;
     margin-top:6%;
+  }
+  .bio{
+    font-size:1.2em;
+    margin: 0 30px 0 10px;
   }
 }
 
