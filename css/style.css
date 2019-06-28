@@ -86,6 +86,7 @@
   animation: bordergrad 5s infinite;
   border-bottom: 2px solid;
   width:70%;
+  margin: 0 0 0 50px;
 }
 @keyframes bordergrad{
   0%{
@@ -111,7 +112,9 @@
   margin-top:50px;
   margin-right:50px;
   padding-bottom:30px;
+  grid-area:rb;
 }
+
 
 @keyframes blink{
     0% { opacity:1; }
@@ -140,17 +143,27 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 15% 40px 50px 100px auto;
+  grid-template-rows: 40px 60px 40px 260px 50px 100px auto;
   grid-template-areas: 
-  "b b b b b b b . . . . ."
   ". . . . . . . . . . . ."
+  "r r r . . . . . . . . ."
+  ". . . . . . . . . . . ."
+  "b b b b b b b b b b . . "
+
   "e e e e e e s s s s s s"
   "wu wu wu wu wu wu sl sl sl sl sl sl"
   "jc jc jc jc jc jc sl sl sl sl sl sl";
 }
 .skills{
-  grid-area:s;
-  
+  grid-area:s; 
+}
+.resume{
+  grid-area: r;
+  font-size:2.7em;
+  margin: 0 0 0 50px;
+  font-family: 'Lilita One', sans-serif;
+  animation: bordergrad 5s infinite;
+  border-bottom: 2px solid;
 }
 .education{
   grid-area:e;
@@ -166,9 +179,10 @@
 }
 .bio{
   grid-area:b;
-  border-left: 2px black solid;
+  /* border-left: 2px black solid; */
   margin: 0 0 0 50px;
   padding:0 0 0 30px;
+  font-size:1.7em;
 }
 .skilllist{
   grid-area: sl;
@@ -369,6 +383,7 @@
     margin-left:51%;
     margin-top:6%;
   }
+
 }
 @media screen and (max-width: 1900px){
 
