@@ -439,7 +439,7 @@
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40px 80px 40px 240px 60px 60px 100px 50px auto;
+    grid-template-rows: 40px 80px 100px 240px 60px 60px 100px 50px auto;
     grid-template-areas: 
     ". . . ."
     "r r r r"
