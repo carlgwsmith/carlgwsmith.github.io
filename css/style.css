@@ -509,6 +509,7 @@ textarea.form-control{
   .bio{
     font-size:1.2em;
     margin: 0 30px 0 10px;
+    padding-bottom:60px;
   }
 }
 
