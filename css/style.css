@@ -175,7 +175,6 @@
   grid-area:b;
   /* border-left: 2px black solid; */
   margin: 0 0 0 50px;
-  padding:0 0 0 30px;
   font-size:1.7em;
 }
 .skilllist{
@@ -493,7 +492,7 @@ textarea.form-control{
   }
   .bio{
     font-size:1.2em;
-    margin: 0 30px 0 10px;
+    margin: 0 0px 0 10px;
   }
 
 }
