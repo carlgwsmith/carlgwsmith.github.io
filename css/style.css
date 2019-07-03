@@ -531,6 +531,9 @@ textarea.form-control{
 .parallax{
   height:100vh;
 }
+.skilllist{
+  padding-top:30px;
+}
 
 }
 @media screen and (max-width: 400px){
