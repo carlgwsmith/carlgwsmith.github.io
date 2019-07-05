@@ -217,6 +217,20 @@ textarea.form-control{
   min-height:250px !important;
   
 }
+#name{
+  margin-bottom:15px;
+}
+#subject
+{
+  margin-bottom:15px;
+}
+#message{
+  margin-bottom:15px;
+}
+a.btn.btn-primary{
+  color:white !important;
+  font-weight:600;
+}
 .form{
   grid-area:f;
 }
