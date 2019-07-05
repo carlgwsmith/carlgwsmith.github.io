@@ -134,7 +134,7 @@
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 40px 80px 40px 260px 50px 100px auto 0px ;
+  grid-template-rows: 40px 80px 40px 320px 50px 60px auto 0px ;
   grid-template-areas: 
   ". . . . . . . . . . . ."
   "r r r r r r r r . . . ."
@@ -162,6 +162,7 @@
 .education{
   grid-area:e;
   margin: 0 0 0 50px;
+  font-weight:700;
 }
 .ed1{
   grid-area:wu;
@@ -180,6 +181,9 @@
 .skilllist{
   grid-area: sl;
   font-size:1.3em;
+}
+.botbord{
+  border-bottom:1px solid black;
 }
 
 /* CONTACT US GRID */
