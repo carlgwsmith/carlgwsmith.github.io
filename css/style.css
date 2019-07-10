@@ -418,20 +418,20 @@ a.btn.btn-primary{
     ;
   }
   .resume{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
   }
   .education{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
   }
   .skills{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
   }
   .skilllist{
     margin: 0 0 0 50px;
   }
   .bio{
     font-size:1.5em;
-    margin: 0 60px 0 10px;
+    margin: 0 60px 120px 50px;
   }
   .resumename{
     font-size:.8em;
@@ -463,12 +463,13 @@ a.btn.btn-primary{
   }
   .bio{
     font-size:1.2em;
-    margin: 0 30px 0 10px;
+    margin: 0 30px 0 20px;
     padding-bottom:60px;
   }
   .skilllist{
-    padding-top:40px;
+    /* padding-top:40px; */
   }
+
 }
 
 @media screen and (max-width: 600px){
@@ -490,7 +491,7 @@ a.btn.btn-primary{
   height:100vh;
 }
 .skilllist{
-  padding-top:40px;
+  /* padding-top:40px; */
 }
 
 }
