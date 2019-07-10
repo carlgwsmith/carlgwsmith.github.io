@@ -410,18 +410,18 @@ a.btn.btn-primary{
     "r r r r"
     ". . . ."
     "b b b b"
-    "e e e e"
-    "wu wu wu wu"
-    "jc jc jc jc"
-    "s s s s"
-    "sl sl sl sl"
+    "e e s s"
+    "wu wu sl sl"
+    "jc jc sl sl"
+    "jc jc sl sl"
+    ". . . ."
     ;
   }
   .resume{
     margin: 0 0 0 20px;
   }
   .education{
-    margin: 0 0 0 20px;
+    margin: 0 0 0 40px;
   }
   .skills{
     margin: 0 0 0 20px;
@@ -450,9 +450,50 @@ a.btn.btn-primary{
   .bio{
     font-size:1.2em;
   }
+  .main {
+    height: 900px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 80px 60px 240px 60px 100px 100px 50px auto;
+    grid-template-areas: 
+    ". . . ."
+    "r r r r"
+    ". . . ."
+    "b b b b"
+    "e e e e"
+    "wu wu wu wu"
+    "jc jc jc jc"
+    "s s s s"
+    "sl sl sl sl"
+    ;
+  }
+  .education{
+    margin-left:40px;
+  }
+  .skills{
+    margin-left:40px;
+  }
+  
 
 }
 
+@media screen and (max-width: 800px){
+
+
+  .bio{
+    font-size:1.3em;
+    margin-left: 40px;
+  }
+  .education{
+    margin-left:40px;
+  }
+  .skills{
+    margin-left:40px;
+  }
+  
+
+}
 @media screen and (max-width: 700px){
 
   .thanks{
@@ -462,7 +503,7 @@ a.btn.btn-primary{
     margin-top:6%;
   }
   .bio{
-    font-size:1.2em;
+    font-size:1.3em;
     margin: 0 30px 0 20px;
     padding-bottom:60px;
   }
@@ -471,6 +512,7 @@ a.btn.btn-primary{
   }
 
 }
+
 
 @media screen and (max-width: 600px){
 
@@ -493,6 +535,46 @@ a.btn.btn-primary{
 .skilllist{
   /* padding-top:40px; */
 }
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 80px 60px 280px 60px 100px 100px 50px auto;
+  grid-template-areas: 
+  ". . . ."
+  "r r r r"
+  ". . . ."
+  "b b b b"
+  "e e e e"
+  "wu wu wu wu"
+  "jc jc jc jc"
+  "s s s s"
+  "sl sl sl sl"
+  ;
+}
+}
+@media screen and (max-width: 500px){
+
+
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 50px 20px 320px 60px 60px 80px 50px auto;
+  grid-template-areas: 
+  ". . . ."
+  "r r r r"
+  ". . . ."
+  "b b b b"
+  "e e e e"
+  "wu wu wu wu"
+  "jc jc jc jc"
+  "s s s s"
+  "sl sl sl sl"
+  ;
+}
 
 }
 @media screen and (max-width: 400px){
@@ -514,5 +596,23 @@ a.btn.btn-primary{
 }
 .parallax{
   height:100vh;
+}
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 60px 30px 390px 60px 100px 100px 50px auto;
+  grid-template-areas: 
+  ". . . ."
+  "r r r r"
+  ". . . ."
+  "b b b b"
+  "e e e e"
+  "wu wu wu wu"
+  "jc jc jc jc"
+  "s s s s"
+  "sl sl sl sl"
+  ;
 }
 }
