@@ -384,9 +384,6 @@ a.btn.btn-primary{
   .navbar-brand{
     display:none!important;
   }
-  .parallax{
-    height:120vh;
-  }
   .thanks{
     color:white;
     z-index: 2;
@@ -595,7 +592,7 @@ a.btn.btn-primary{
     color:blue;
 }
 .parallax{
-  height:100vh;
+  height:62vh;
 }
 .main {
   height: 900px;
