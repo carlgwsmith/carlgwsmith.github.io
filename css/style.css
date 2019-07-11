@@ -645,22 +645,9 @@ a.btn.btn-primary{
 
 
 .main {
-  height: 900px;
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(4, 1fr);
+
   grid-template-rows: 40px 50px 20px 300px 45px 80px 80px 45px auto;
-  grid-template-areas: 
-  ". . . ."
-  "r r r r"
-  ". . . ."
-  "b b b b"
-  "e e e e"
-  "wu wu wu wu"
-  "jc jc jc jc"
-  "s s s s"
-  "sl sl sl sl"
-  ;
+
   }
   .bio{
     font-size:1em;
