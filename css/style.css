@@ -613,10 +613,10 @@ a.btn.btn-primary{
     padding-right: 0px;
     padding-left:15px; 
     flex-basis:auto; 
-    color:blue;
+    color:#333;
 }
 .parallax{
-  height:62vh;
+  height:100vh;
 }
 .main {
   height: 900px;
@@ -682,5 +682,15 @@ a.btn.btn-primary{
   .skilllist{
     font-size:.85em;
   }
+  .col.introtext{
+    font-size:3em;
+  }
+  .parallax__cover{
+    top:99%;
+  }
+  .parallax__layer__5
+  {transform: translateZ(-102px) scale(1.5);
+  width: 422px;}
+
 
 }
