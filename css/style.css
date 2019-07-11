@@ -526,13 +526,9 @@ a.btn.btn-primary{
   .skilllist{
     /* padding-top:40px; */
   }
-<<<<<<< HEAD
   .contacthead{
     font-size:1.7em;
   }
-=======
-
->>>>>>> 51ee276d0c7111e16379a480049ce787f6089fed
 }
 
 
@@ -558,44 +554,15 @@ a.btn.btn-primary{
   /* padding-top:40px; */
 }
 .main {
-  height: 900px;
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 80px 60px 280px 60px 100px 100px 50px auto;
-  grid-template-areas: 
-  ". . . ."
-  "r r r r"
-  ". . . ."
-  "b b b b"
-  "e e e e"
-  "wu wu wu wu"
-  "jc jc jc jc"
-  "s s s s"
-  "sl sl sl sl"
-  ;
+
 }
 }
 @media screen and (max-width: 500px){
 
 
 .main {
-  height: 900px;
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 50px 20px 320px 60px 60px 80px 50px auto;
-  grid-template-areas: 
-  ". . . ."
-  "r r r r"
-  ". . . ."
-  "b b b b"
-  "e e e e"
-  "wu wu wu wu"
-  "jc jc jc jc"
-  "s s s s"
-  "sl sl sl sl"
-  ;
 }
 .contacthead{
   font-size:1.2em;
@@ -623,23 +590,9 @@ a.btn.btn-primary{
   height:62vh;
 }
 .main {
-  height: 900px;
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 60px 30px 390px 60px 100px 100px 50px auto;
-  grid-template-areas: 
-  ". . . ."
-  "r r r r"
-  ". . . ."
-  "b b b b"
-  "e e e e"
-  "wu wu wu wu"
-  "jc jc jc jc"
-  "s s s s"
-  "sl sl sl sl"
-  ;
 }
+
 }
 @media screen and (max-width: 340px){
 
@@ -649,17 +602,28 @@ a.btn.btn-primary{
   grid-template-rows: 40px 50px 20px 300px 45px 80px 80px 45px auto;
 
   }
+  .education{
+    margin-left:20px;
+  }
   .bio{
     font-size:1em;
+    margin-left:20px;
   }
   .ed1{
     font-size:.85em;
+    margin-left:20px;
   }
   .ed2{
     font-size:.85em;
+    margin-left:20px;
+  }
+  .skills{
+    margin-left:20px;
   }
   .skilllist{
     font-size:.85em;
+    margin-left:20px;
   }
+
 
 }
