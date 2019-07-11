@@ -14,6 +14,6 @@ $headers .="Reply-To: $email /r/n";
 
 mail($to,$email_subject,$email_body,$headers);
 
-header("location: index.html");
+header("location: contact.html");
 
 ?>

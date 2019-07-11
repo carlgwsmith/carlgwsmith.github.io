@@ -62,50 +62,54 @@
               <div class="formdetails">Want to get in touch about your next project?</br> Let's Talk.</div>
               <br>
                 <div class="form">
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id ="contact-form" name="contact-form" action="php/mail.php" method="POST" >
+                    <form id="contact-form" method="post" action="mail.php" role="form">
 
-              <!--Grid row-->
-              <div class="row">
+                        <div class="messages"></div>
+                    
+                        <div class="controls">
+                    
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
 
-                  <!--Grid column-->
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <input type="text" id="name" name="name"  placeholder="Your Name" class="form-control">
-                      </div>
-                  </div>
-                  <!--Grid column-->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
 
-                  <!--Grid column-->
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <input type="text" id="email" name="email" placeholder="Email Address" class="form-control">
-                      </div>
-                  </div>
-                  <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-
-                      <div class="md-form">
-                          <textarea type="text" id="message" placeholder="Your Message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Grid row-->
-          </form>
-
-          <div class="text-center text-md-left">
-            <button type="submit" class="btn btn-outline-dark">Send Your Message</button>
-          </div>
-          <div class="status"></div>
-      </div>
+                        </div>
+                    
+                    </form>
       
       <!--Grid column-->
                 </div>

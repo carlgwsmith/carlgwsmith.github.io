@@ -202,7 +202,7 @@
   ". . . . . . . . . . . ."
   ". . . . ch ch ch ch . . . ."
   ". . . . fd fd fd fd . . . ."
-  ". . . . f f f f f . . .";
+  ". . . f f f f f f . . .";
 }
 .contacthead{
   grid-area: ch;
@@ -233,6 +233,7 @@ a.btn.btn-primary{
 }
 .form{
   grid-area:f;
+  justify-content: center;
 }
 .formdetails{
   grid-area:fd;
@@ -400,6 +401,9 @@ a.btn.btn-primary{
     margin-left:51%;
     margin-top:6%;
   }
+  .contacthead{
+    font-size:2.7em;
+  }
 
 }
 @media screen and (max-width: 1900px){
@@ -409,6 +413,9 @@ a.btn.btn-primary{
     z-index: 2;
     margin-left:53%;
     margin-top:6%;
+  }
+  .contacthead{
+    font-size:2.4em;
   }
 }
 
@@ -478,6 +485,9 @@ a.btn.btn-primary{
     "sl sl sl sl"
     ;
   }
+  .formdetails{
+    font-size:1.2em;
+  }
   .resume{
     margin: 0 0 0 10px;
   }
@@ -498,6 +508,9 @@ a.btn.btn-primary{
     font-size:.8em;
     margin: 0 0 0 10px;
   }
+  .contacthead{
+    font-size:2em;
+  }
 
 }
 @media screen and (max-width: 900px){
@@ -511,6 +524,12 @@ a.btn.btn-primary{
   .bio{
     font-size:1.2em;
     margin: 0 0px 0 10px;
+  }
+  .contacthead{
+    font-size:1.7em;
+  }
+  .formdetails{
+    font-size:1em;
   }
 
 }
@@ -530,6 +549,9 @@ a.btn.btn-primary{
   }
   .skilllist{
     padding-top:40px;
+  }
+  .contacthead{
+    font-size:1.7em;
   }
 }
 
@@ -553,6 +575,9 @@ a.btn.btn-primary{
 }
 .skilllist{
   padding-top:40px;
+}
+.contacthead{
+  font-size:1.2em;
 }
 
 }
