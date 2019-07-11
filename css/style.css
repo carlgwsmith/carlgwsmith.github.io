@@ -460,14 +460,12 @@ a.btn.btn-primary{
   .bio{
     font-size:1.2em;
   }
-<<<<<<< HEAD
   .contacthead{
     font-size:1.7em;
   }
   .formdetails{
     font-size:1em;
   }
-=======
   .main {
     height: 900px;
     display: grid;
@@ -493,7 +491,6 @@ a.btn.btn-primary{
     margin-left:40px;
   }
   
->>>>>>> 51ee276d0c7111e16379a480049ce787f6089fed
 
 }
 
@@ -643,4 +640,39 @@ a.btn.btn-primary{
   "sl sl sl sl"
   ;
 }
+}
+@media screen and (max-width: 340px){
+
+
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 50px 20px 300px 45px 80px 80px 45px auto;
+  grid-template-areas: 
+  ". . . ."
+  "r r r r"
+  ". . . ."
+  "b b b b"
+  "e e e e"
+  "wu wu wu wu"
+  "jc jc jc jc"
+  "s s s s"
+  "sl sl sl sl"
+  ;
+  }
+  .bio{
+    font-size:1em;
+  }
+  .ed1{
+    font-size:.85em;
+  }
+  .ed2{
+    font-size:.85em;
+  }
+  .skilllist{
+    font-size:.85em;
+  }
+
 }
