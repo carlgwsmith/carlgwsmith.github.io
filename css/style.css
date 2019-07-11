@@ -330,67 +330,6 @@ a.btn.btn-primary{
 }
 
 
-/*Particles*/
-
-/* #particle1{
-  animation: move 4s infinite;
-}
-
-@keyframes move{
-  0%{
-    transform: scale(5);
-  }
-  100%{
-    transform:scale(0);
-  }
-}
-#particle2{
-  animation: move2 3s infinite;
-  animation-delay: 1s;
-}
-
-@keyframes move2{
-  0%{
-    transform: scale(5);
-  }
-  100%{
-    transform:scale(0);
-    color:white;
-    transform:translateY(100px);
-  }
-}
-#particle3{
-  animation: move3 2.5s infinite;
-  animation-delay: .5s;
-}
-
-@keyframes move3{
-  0%{
-    transform: translateX(1000px);
-  }
-  100%{
-    transform:scale(0);
-    color:white;
-    transform:translateY(100px);
-  }
-}
-#particle4{
-  animation: move3 2.5s infinite;
-  animation-delay: .5s;
-}
-
-@keyframes move3{
-  0%{
-    transform: translateX(1000px);
-  }
-  100%{
-    transform:scale(0);
-    color:white;
-    transform:translateY(100px);
-  }
-} */
-
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 2100px){
@@ -452,9 +391,6 @@ a.btn.btn-primary{
   .navbar-brand{
     display:none!important;
   }
-  .parallax{
-    height:120vh;
-  }
   .thanks{
     color:white;
     z-index: 2;
@@ -472,37 +408,37 @@ a.btn.btn-primary{
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40px 80px 60px 300px 60px 60px 100px 50px auto;
+    grid-template-rows: 40px 80px 60px 300px 60px 100px 100px 50px auto;
     grid-template-areas: 
     ". . . ."
     "r r r r"
     ". . . ."
     "b b b b"
-    "e e e e"
-    "wu wu wu wu"
-    "jc jc jc jc"
-    "s s s s"
-    "sl sl sl sl"
+    "e e s s"
+    "wu wu sl sl"
+    "jc jc sl sl"
+    "jc jc sl sl"
+    ". . . ."
     ;
   }
   .formdetails{
     font-size:1.2em;
   }
   .resume{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
   }
   .education{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 40px;
   }
   .skills{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
   }
   .skilllist{
     margin: 0 0 0 50px;
   }
   .bio{
     font-size:1.5em;
-    margin: 0 30px 0 10px;
+    margin: 0 60px 120px 50px;
   }
   .resumename{
     font-size:.8em;
@@ -523,17 +459,60 @@ a.btn.btn-primary{
   }
   .bio{
     font-size:1.2em;
-    margin: 0 0px 0 10px;
   }
+<<<<<<< HEAD
   .contacthead{
     font-size:1.7em;
   }
   .formdetails{
     font-size:1em;
   }
+=======
+  .main {
+    height: 900px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 80px 60px 240px 60px 100px 100px 50px auto;
+    grid-template-areas: 
+    ". . . ."
+    "r r r r"
+    ". . . ."
+    "b b b b"
+    "e e e e"
+    "wu wu wu wu"
+    "jc jc jc jc"
+    "s s s s"
+    "sl sl sl sl"
+    ;
+  }
+  .education{
+    margin-left:40px;
+  }
+  .skills{
+    margin-left:40px;
+  }
+  
+>>>>>>> 51ee276d0c7111e16379a480049ce787f6089fed
 
 }
 
+@media screen and (max-width: 800px){
+
+
+  .bio{
+    font-size:1.3em;
+    margin-left: 40px;
+  }
+  .education{
+    margin-left:40px;
+  }
+  .skills{
+    margin-left:40px;
+  }
+  
+
+}
 @media screen and (max-width: 700px){
 
   .thanks{
@@ -543,17 +522,22 @@ a.btn.btn-primary{
     margin-top:6%;
   }
   .bio{
-    font-size:1.2em;
-    margin: 0 30px 0 10px;
+    font-size:1.3em;
+    margin: 0 30px 0 20px;
     padding-bottom:60px;
   }
   .skilllist{
-    padding-top:40px;
+    /* padding-top:40px; */
   }
+<<<<<<< HEAD
   .contacthead{
     font-size:1.7em;
   }
+=======
+
+>>>>>>> 51ee276d0c7111e16379a480049ce787f6089fed
 }
+
 
 @media screen and (max-width: 600px){
 
@@ -574,7 +558,47 @@ a.btn.btn-primary{
   height:100vh;
 }
 .skilllist{
-  padding-top:40px;
+  /* padding-top:40px; */
+}
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 80px 60px 280px 60px 100px 100px 50px auto;
+  grid-template-areas: 
+  ". . . ."
+  "r r r r"
+  ". . . ."
+  "b b b b"
+  "e e e e"
+  "wu wu wu wu"
+  "jc jc jc jc"
+  "s s s s"
+  "sl sl sl sl"
+  ;
+}
+}
+@media screen and (max-width: 500px){
+
+
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 50px 20px 320px 60px 60px 80px 50px auto;
+  grid-template-areas: 
+  ". . . ."
+  "r r r r"
+  ". . . ."
+  "b b b b"
+  "e e e e"
+  "wu wu wu wu"
+  "jc jc jc jc"
+  "s s s s"
+  "sl sl sl sl"
+  ;
 }
 .contacthead{
   font-size:1.2em;
@@ -599,6 +623,24 @@ a.btn.btn-primary{
     color:blue;
 }
 .parallax{
-  height:100vh;
+  height:62vh;
+}
+.main {
+  height: 900px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 60px 30px 390px 60px 100px 100px 50px auto;
+  grid-template-areas: 
+  ". . . ."
+  "r r r r"
+  ". . . ."
+  "b b b b"
+  "e e e e"
+  "wu wu wu wu"
+  "jc jc jc jc"
+  "s s s s"
+  "sl sl sl sl"
+  ;
 }
 }
