@@ -245,7 +245,7 @@ a.btn.btn-primary{
 }
 /* PARALLAX */
 
-/* .parallax {
+.parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
   height: 100vh;
@@ -327,7 +327,7 @@ a.btn.btn-primary{
 .parallax__layer__6 {
   -webkit-transform: translateZ(0px) scale(1);
           transform: translateZ(0px) scale(1);
-} */
+}
 
 
 /* MEDIA QUERIES */
