@@ -689,8 +689,32 @@ a.btn.btn-primary{
     top:99%;
   }
   .parallax__layer__5
-  {transform: translateZ(-102px) scale(1.5);
-  width: 422px;}
-
+  {transform: translateY(110px) translateZ(-73px) scale(1.5);
+  }
+  .parallax{
+    -webkit-perspective: 100px;
+    perspective: 56px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 10%;
+    left: 135%;
+    right: 0;
+    bottom: 0;
+    margin-left: -1500px;
+  }
+  .mainthanks{
+    font-size:18px;
+    margin-left:0%;
+  }
+  .col.thanks{
+    width:21%;
+    left:72px;
+    text-align:center;
+  }
+  .centerfy{
+    margin-left:0;
+  }
 
 }
