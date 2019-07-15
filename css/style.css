@@ -681,7 +681,9 @@ a.btn.btn-primary{
 }
 
 @media screen and (max-width: 340px){
-
+.gallery{
+  margin: 10px 21px;
+}
 
 .main {
   height: 900px;
@@ -746,6 +748,25 @@ a.btn.btn-primary{
   }
   .centerfy{
     margin-left:0;
+  }
+  .contactcontain {
+    height: 900px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    padding:20px;
+    grid-template-rows: 20px 60px 130px auto;
+    grid-template-areas: 
+    ". . . ."
+    "ch ch ch ch"
+    "fd fd fd fd"
+    "f f f f  ";
+}
+  .formdetails{
+    font-size:1.3em;
+  }
+  .contacthead{
+    font-size:1.9em;
   }
 
 }
