@@ -239,8 +239,8 @@ a.btn.btn-primary{
   grid-area:fd;
   justify-content: center;
   text-align:center;
-  font-size:1.4em;
-  font-family:'oswald', sans-serif;
+  font-size:1.2em;
+  font-family: sans-serif;
   padding-top:20px;
 }
 /* PARALLAX */
@@ -421,6 +421,7 @@ a.btn.btn-primary{
     ". . . ."
     ;
   }
+
   .formdetails{
     font-size:1.2em;
   }
@@ -460,9 +461,6 @@ a.btn.btn-primary{
   .bio{
     font-size:1.2em;
   }
-  .contacthead{
-    font-size:1.7em;
-  }
   .formdetails{
     font-size:1em;
   }
@@ -483,6 +481,30 @@ a.btn.btn-primary{
     "s s s s"
     "sl sl sl sl"
     ;
+  }
+  .contactcontain {
+    height: 900px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 90px 120px auto;
+    grid-template-areas:
+    ". . . ."
+    "ch ch ch ch"
+    "fd fd fd fd"
+    "f f f f";
+  }
+  .contacthead{
+    grid-area: ch;
+    justify-content: center;
+    font-family: 'oswald', sans-serif;
+    letter-spacing: .2em;
+    font-size:4em;
+    text-transform: uppercase;
+    border-bottom:0;
+  }
+  .formdetails{
+    font-size:1.5em;
   }
   .education{
     margin-left:40px;
@@ -527,7 +549,7 @@ a.btn.btn-primary{
     /* padding-top:40px; */
   }
   .contacthead{
-    font-size:1.7em;
+    font-size:3em;
   }
 }
 
@@ -594,6 +616,9 @@ a.btn.btn-primary{
   ;
 }
 .contacthead{
+  font-size:3em;
+}
+.formdetails{
   font-size:1.2em;
 }
 
@@ -662,6 +687,15 @@ a.btn.btn-primary{
 }
 .skilllist{
   font-size:.85em;
+}
+.contacthead{
+  font-size:2.4em;
+}
+.formdetails{
+  font-size:1em;
+}
+.form{
+  padding:20px;
 }
 }
 
