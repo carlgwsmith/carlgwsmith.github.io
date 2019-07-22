@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans+Condensed:300,300i,700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+$lato:'Lato', Sans-serif;
+
+.nav-container {
+    width: 100%;
+  }
+
+nav {
+    max-width: 1720px;
+    margin: 0 auto;
+    display: grid;
+    padding:20px;
+    grid-gap:5px;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    transition: .3s all ease-in-out;
+    color:black;
+  }
+  nav a:hover {
+    opacity: .5;
+  }
+
+  .right-menu {
+    grid-column: 3;
+    align-self:center;
+  }
+  .right-menu a{
+    padding: 10px 0;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  .logo {
+    grid-column: 1;
+    font-size:40px;
+    padding:1rem;
+    font-family:$lato;
+    font-weight:300;
+  }
+
+  #nav-toggle, .burger-menu {
+    display: none;
+  }
+
+  .burger-menu {
+    width: 40px;
+    height:40px;
+    grid-column:3;
+    align-self:center;
+    margin-left:20px;
+
+  }
+/* 
+  MAIN CONTAINER */
+  .main > div {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .main{
+    display:grid;
+    height: 75%;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 100px auto 20px;
+    grid-template-areas: 
+      ". mt mt mt mt mt . . . . . ."
+      "s s s s s s s s s s s s"
+      "s s s s s s s s s s s s";
+      background-color:rgb(36, 184, 56);      
+}
+
+/* SFC CONTAINER */
+
+  .sfc > div {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .sfc{
+    display:grid;
+    height: 75%;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 100px auto 20px;
+    grid-template-areas: 
+      ". mt mt mt mt mt mt mt . . . ."
+      "sf sf sf sf sf sf sf sf sf sf sf sf"
+      "sf sf sf sf sf sf sf sf sf sf sf sf"
+      ". . . . . . . . . . . .";
+      background-color:rgb(226, 228, 97);      
+}
+.stirfryandcurry{
+    grid-area: sf;
+    line-height:1.5em;
+    font-family: 'Open Sans', sans-serif;
+
+    }
+    .stirfryandcurry ul li{
+        list-style-type:none;
+    }
+    .stirfryandcurry li{
+        padding-bottom:10px;
+    }
+/* 
+  noods CONTAINER */
+  .noods > div {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .noods{
+    display:grid;
+    height: 75%;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 100px auto 20px;
+    grid-template-areas: 
+    ". mt mt mt mt mt mt mt . . . ."
+    "n n n n n n n n n n n n"
+    "n n n n n n n n n n n n "
+    ". . . . . . . . . . . .";
+    background-color:rgb(252, 178, 236);      
+}
+.noodles{
+    grid-area:n;
+    line-height:1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+.noodles ul li{
+    list-style-type:none;
+}
+.noodles li{
+    padding-bottom:10px;
+}
+/* 
+  salads CONTAINER */
+  .salads > div {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .salads{
+    display:grid;
+    height: 75%;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 100px auto 20px;
+    grid-template-areas: 
+      ". mt mt mt mt mt . . . . . ."
+      "s s s s s s s s s s s s"
+      "s s s s s s s s s s s s"
+      ". . . . . . . . . . . .";
+      background-color:rgb(190, 255, 237);      
+}
+.saladcontent{
+    grid-area:s;
+    line-height:1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+.saladcontent ul li{
+    list-style-type:none;
+}
+.saladcontent li{
+    padding-bottom:10px;
+}
+/* 
+  bev CONTAINER */
+  .bev > div {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .bev{
+    display:grid;
+    height: 75%;
+    grid-gap:5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 100px auto 20px;
+    grid-template-areas: 
+      ". mt mt mt mt mt . . . . . ."
+      "s s s s s s s s s s s s"
+      "s s s s s s s s s s s s";
+      background-color:rgb(255, 202, 202);      
+}
+.beverages{
+    grid-area:s;
+    line-height:1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+.beverages ul li{
+    list-style-type:none;
+}
+.beverages li{
+    padding-bottom:10px;
+}
+    .menutitle{
+        font-size:4em;
+        font-family:$lato;
+        text-transform: uppercase;
+        font-weight:300;
+        grid-area:mt;
+        align-items:flex-end;
+        -moz-transition: text-shadow 0.3s, color 0.3s;
+        -o-transition: text-shadow 0.3s, color 0.3s;
+        -webkit-transition: text-shadow 0.3s, color 0.3s;
+        transition: text-shadow 0.3s, color 0.3s;
+        
+    }
+    .menutitle:hover {
+        -moz-transition: text-shadow 0.2s, color 0.2s;
+        -o-transition: text-shadow 0.2s, color 0.2s;
+        -webkit-transition: text-shadow 0.2s, color 0.2s;
+        transition: text-shadow 0.2s, color 0.2s;
+        color: #111;
+        text-shadow: #eee 1px 1px,#eee 2px 2px,#eee 3px 3px,#eee 4px 4px,#eee 5px 5px,#eee 6px 6px,#eee 7px 7px,#eee 8px 8px,#eee 9px 9px,#eee 10px 10px;
+      }
+
+    /* STARTERS */
+      .starters{
+        grid-area:s;
+        line-height:1.5em;
+        font-family: 'Open Sans', sans-serif;
+        justify-content: center;
+    }
+    .starters ul li{
+        list-style-type:none;
+    }
+    .starters li{
+        padding-bottom:10px;
+    }
+    .dishtitle{
+        font-size:1em;
+        font-weight:700;
+    }
+
+  @media only screen and (max-width: 1025px) {
+    .burger-menu {
+      display: inline-block;
+    }
+
+    .right-menu {
+      display: none;
+    }
+    #nav-toggle:checked ~ .right-menu {
+        display: grid;
+        grid-row: 2;
+        background-color:rgb(206, 206, 206);
+        color:white;
+        align-items:center;
+        padding:10px 22px 10px 5px;
+        
+      }
+      nav .right-menu a{
+        color:white;
+      }
+  }
