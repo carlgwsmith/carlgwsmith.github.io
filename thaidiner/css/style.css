@@ -19,10 +19,10 @@ html, body {
     height: 23%;
     grid-gap:5px;
     grid-template-columns: repeat(12, 1fr);
-          grid-template-rows: 40px 70px 50px;
+          grid-template-rows: 40px 80px 50px;
     grid-template-areas: 
       "h h h hrs hrs hrs hrs hrs hrs o o o"
-      "s s s . . . . . . dl dl dl"
+      "s s s hrs hrs hrs hrs hrs hrs dl dl dl"
       "n n n n n n n n n n n n"
       ;      
 }
@@ -127,7 +127,9 @@ html, body {
 
 .hours{
   grid-area: hrs;
-  align-items:flex-end;
+  text-align:Center;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 .subheader{
@@ -181,9 +183,7 @@ text-align:center;
       ". . . . . . . . . . . . "
       "n n n n n n n n n n n n"
   }
-  div.hours{
-    
-  }
+
   div.onlineorder{
     display:none;
   }
@@ -226,9 +226,7 @@ text-align:center;
       ". . . . . . . . . . . . "
       "n n n n n n n n n n n n"
   }
-  div.hours{
-    
-  }
+
   div.onlineorder{
     display:none;
   }
