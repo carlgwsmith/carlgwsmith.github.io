@@ -14,4 +14,3 @@ document.getElementById('starters').onclick = function fun(){
     f1();
 }
 }
-
