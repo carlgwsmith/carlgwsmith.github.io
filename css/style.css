@@ -273,7 +273,7 @@ a.btn.btn-primary{
 }
 
 .parallax__cover {
-  background: rgb(45,17,43);
+  background: black;
   display: block;
   position: absolute;
   top: 100%;
@@ -327,7 +327,11 @@ a.btn.btn-primary{
 
 
 /* MEDIA QUERIES */
-
+@media screen and (max-width:2800px){
+  .thanks{
+    margin-left:44%;
+  }
+}
 @media screen and (max-width: 2100px){
 
   .thanks{
@@ -359,8 +363,15 @@ a.btn.btn-primary{
   .thanks{
     color:white;
     z-index: 2;
-    margin-left:58%;
+    margin-left:55%;
     margin-top:6%;
+  }
+}
+@media screen and (max-width: 1500px){
+
+  .thanks{
+    margin-left:59%;
+
   }
 }
 @media screen and (max-width: 1400px){
