@@ -6,6 +6,7 @@ html, body {
   height: 100%;
   padding: 10px;
   margin: 0 auto;
+  font-family:'Open Sans Condensed', sans-serif;
   }
   .nav > div {
     display: flex;
@@ -15,10 +16,10 @@ html, body {
 
 .nav{
     display:grid;
-    height: 23%;
+    height: 30%;
     grid-gap:5px;
     grid-template-columns: repeat(12, 1fr);
-          grid-template-rows: 0px 80px 50px;
+          grid-template-rows: 80px 80px auto;
     grid-template-areas: 
       "h h h hrs hrs hrs hrs hrs hrs o o o"
       "s s s hrs hrs hrs hrs hrs hrs dl dl dl"
@@ -33,7 +34,7 @@ html, body {
 
 .maincontain{
   display:grid;
-  height: 100%;
+  height: 70%;
   width:100%;
   grid-gap:5px;
   grid-template-columns: repeat(12, 1fr);
@@ -100,10 +101,48 @@ html, body {
 
 .header{
   grid-area: h;
+  align-items:flex-end;
 }
 
 
 /* Nav */
+
+
+nav {
+  background-color: #333;
+  text-align: center;
+  }
+  
+  nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+  }
+  
+  nav ul li {
+  display: inline-block;
+  padding: 5px 0;
+  margin: 0;
+  }
+  
+  nav ul li a {
+  font-family: arial;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  nav ul li:hover {
+  background-color: #555;
+  }
+  
+  #responsive-nav {
+  cursor: pointer;
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  padding: 5px 0;
+  }
 
 
 .nav1{
@@ -114,26 +153,28 @@ html, body {
 /* End of Nav */
 
 
-
+.mobilemenu{
+  display:none;
+}
 
 .maintitle{
   font-weight:700;
-  font-size:2.2em;
+  font-size:3.3em;
   margin:0;
   text-transform:uppercase;
-  letter-spacing: .29em;
+  /* letter-spacing: .29em; */
 }
 
 .hours{
   grid-area: hrs;
   text-align:Center;
-  padding-top:20px;
-  padding-bottom:20px;
+  align-items:center;
+  font-size:1.3em;
 }
 
 .subheader{
 grid-area: s;
-margin-top:-10px;
+line-height:0em;
 }
 
 .subtitle{
@@ -173,7 +214,7 @@ text-align:center;
     display:grid;
     height: 23%;
     grid-gap:5px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat (12,1fr);
     grid-template-rows: 40px 30px 30px 30px 50px;
     grid-template-areas: 
       "h h h h h h h h h h h h"
@@ -208,16 +249,19 @@ text-align:center;
   text-transform:uppercase;
   letter-spacing: .3em;
   text-align:center;
+  }
+  .mobilemenu{
+    display:none;
   }
   
 }
 @media (max-width:600px) {
   .nav{
-    display:grid;
-    height: 23%;
-    grid-gap:5px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 30px 30px 30px 50px;
+    display: grid;
+    height: 57%;
+    grid-gap: 5px;
+    grid-template-columns: repeat (12,1fr);
+    grid-template-rows: 70px 40px 63px 11px 65px;
     grid-template-areas: 
       "h h h h h h h h h h h h"
       "s s s s s s s s s s s s"
@@ -251,6 +295,24 @@ text-align:center;
   text-transform:uppercase;
   letter-spacing: .3em;
   text-align:center;
+  }
+  .tabContainer{
+    display:none;
+  }
+  .mobilemenu{
+    display: block;
+  }
+  .mobilemenu .buttonContainer button{
+    height:100%;
+    width:240px;
+    font-size:1.3em;
+    border-top: 3px solid rgb(0, 0, 0);
+    border-left:  1px solid rgb(0, 0, 0);
+    border-right:  1px solid rgb(0, 0, 0);
+    border-bottom: 0;
+    box-shadow: 1px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
   }
   
 }
