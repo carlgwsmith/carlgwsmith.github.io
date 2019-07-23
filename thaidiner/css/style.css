@@ -19,13 +19,13 @@ html, body {
     height: 30%;
     grid-gap:5px;
     grid-template-columns: repeat(12, 1fr);
-          grid-template-rows: 80px 80px auto;
+          grid-template-rows: 80px 60px auto;
     grid-template-areas: 
       "h h h hrs hrs hrs hrs hrs hrs o o o"
       "s s s hrs hrs hrs hrs hrs hrs dl dl dl"
-      "n n n n n n n n n n n n"
-      ;      
+      "n n n n n n n n n n n n";      
 }
+
 .maincontain > div {
   display: flex;
   justify-content: center;
@@ -37,8 +37,9 @@ html, body {
   height: 70%;
   width:100%;
   grid-gap:5px;
+  padding-top:25px;
   grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 70px 100px 100px 100px 200px;
+  grid-template-rows: 70px 100px 100px 100px 200px;
   grid-template-areas: 
     "mt mt mt mt mt mt mt mt mt mt mt mt "
     "im im ml ml ml ml ml ml ml ml . ."
@@ -73,31 +74,6 @@ html, body {
   line-height:26px;
 }
 
-.tabContainer{
-  height:50px;
-}
-.tabContainer .buttonContainer{
-   height:100%;
-}
-.tabContainer .buttonContainer button{
-  height:100%;
-  width:240px;
-  font-size:1.3em;
-  border-top: 3px solid rgb(0, 0, 0);
-  border-left:  1px solid rgb(0, 0, 0);
-  border-right:  1px solid rgb(0, 0, 0);
-  border-bottom: 0;
-  box-shadow: 1px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  cursor: pointer;
-}
-.tabContainer .buttonContainer button:hover{
-  border-top: 3px solid rgb(204, 48, 48);
-}
-
-.maincontain .tabPanel{
-  font-size:22px;
-}
 
 .header{
   grid-area: h;
@@ -108,41 +84,6 @@ html, body {
 /* Nav */
 
 
-nav {
-  background-color: #333;
-  text-align: center;
-  }
-  
-  nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0
-  }
-  
-  nav ul li {
-  display: inline-block;
-  padding: 5px 0;
-  margin: 0;
-  }
-  
-  nav ul li a {
-  font-family: arial;
-  padding: 0 5px;
-  text-decoration: none;
-  color: #fff;
-  }
-  
-  nav ul li:hover {
-  background-color: #555;
-  }
-  
-  #responsive-nav {
-  cursor: pointer;
-  color: #fff;
-  font-family: arial;
-  font-weight: bold;
-  padding: 5px 0;
-  }
 
 
 .nav1{
@@ -150,19 +91,55 @@ nav {
   border-bottom:1px solid black;
 }
 
+
+.hover-underline-menu {
+  width: 100%;
+}
+
+.hover-underline-menu .menu {
+  background-color:#333;
+
+}
+
+.hover-underline-menu .menu a {
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+
+  margin:10px;
+}
+
+.hover-underline-menu .menu .underline-from-center {
+  position: relative;
+}
+
+.hover-underline-menu .menu .underline-from-center::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 0.125rem);
+  border-bottom: 0.125rem solid #fefefe;
+  left: 50%;
+  right: 50%;
+  transition: all 0.5s ease;
+}
+
+.hover-underline-menu .menu .underline-from-center :hover::after {
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+
+
 /* End of Nav */
 
 
-.mobilemenu{
-  display:none;
-}
 
 .maintitle{
   font-weight:700;
-  font-size:3.3em;
+  font-size:2.3em;
   margin:0;
   text-transform:uppercase;
-  /* letter-spacing: .29em; */
+  letter-spacing: .09em;
 }
 
 .hours{
@@ -250,9 +227,7 @@ text-align:center;
   letter-spacing: .3em;
   text-align:center;
   }
-  .mobilemenu{
-    display:none;
-  }
+
   
 }
 @media (max-width:600px) {
@@ -296,23 +271,5 @@ text-align:center;
   letter-spacing: .3em;
   text-align:center;
   }
-  .tabContainer{
-    display:none;
-  }
-  .mobilemenu{
-    display: block;
-  }
-  .mobilemenu .buttonContainer button{
-    height:100%;
-    width:240px;
-    font-size:1.3em;
-    border-top: 3px solid rgb(0, 0, 0);
-    border-left:  1px solid rgb(0, 0, 0);
-    border-right:  1px solid rgb(0, 0, 0);
-    border-bottom: 0;
-    box-shadow: 1px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    cursor: pointer;
-  }
-  
+
 }
