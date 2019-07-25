@@ -40,7 +40,7 @@ html, body {
   grid-gap:5px;
   padding-top:25px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 70px 100px 100px 100px 100px;
+  grid-template-rows: 80px 100px 100px 100px 100px;
   grid-template-areas: 
     "mt mt mt mt mt mt mt mt mt mt mt mt "
     "ml ml ml ml ml ml ml ml ml ml ml ml"
@@ -56,15 +56,18 @@ html, body {
 }
 
 .menutitle{
-  font-size:24px;
+  font-size:32px;
   grid-area:mt;
-  text-decoration: underline;
-  align-items:flex-end;
- 
+  text-transform: uppercase;
+  align-items:center;
+  font-weight: 900;
 }
 .menulist{
   grid-area:ml;
   align-items:flex-start;
+}
+.menulist ul{
+  padding-bottom:18px;
 }
 .menulist ul li {
   list-style-type: none;
