@@ -3,7 +3,6 @@
 html, body {
   box-sizing: border-box;
   background-color:white;
-
   margin: 0 auto;
   font-family:'Open Sans Condensed', sans-serif;
   scroll-behavior: smooth;
@@ -24,13 +23,12 @@ html, body {
       ". st ."; 
     width:100%;
     z-index:1;
-    background-color:#333;
+
 }
 .topbar a{
   color:#fff;
 }
 .sticky{
-  position:sticky !important;
   grid-area:st;
   text-align:center;
   background-color:rgb(143, 26, 26);
