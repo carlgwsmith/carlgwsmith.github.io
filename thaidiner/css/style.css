@@ -302,14 +302,14 @@ text-align:center;
     height: 57%;
     grid-gap: 5px;
     grid-template-columns: repeat (12,1fr);
-    grid-template-rows: 70px 40px 63px 11px 65px;
+    grid-template-rows: 70px 40px 63px 11px 85px;
     grid-template-areas: 
     
     "h h h h h h h h h h h h"
       "s s s s s s s s s s s s"
       "hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs"
       ". . . . . . . . . . . . "
-      "n n n n n n n n n n n n"
+      "n n n n n n n n n n n n";
       
   }
   .nav1{
@@ -325,16 +325,19 @@ text-align:center;
     height:100%;
     font-size:1em;
   }
-
-    .maintitle{
-      font-weight:700;
-      font-size:2.6em;
-      margin:0;
-      text-transform:uppercase;
-      letter-spacing: .12em;
+  .hours{
+    font-size:.8em;
+    text-align:center;
+  }
+  .maintitle{
+    font-weight:700;
+    font-size:2em;
+    margin:0;
+    text-transform:uppercase;
+    letter-spacing: .12em;
     }
     .subtitle{
-      font-weight:300;
+    font-weight:300;
     font-size:1em;
     color:rgb(46, 46, 46);
     text-transform:uppercase;
