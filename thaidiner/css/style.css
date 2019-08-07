@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300,300i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Alfa+Slab+One|Open+Sans+Condensed:300,300i,700&display=swap');
 
 html, body {
   box-sizing: border-box;
@@ -16,25 +16,33 @@ html, body {
     position: sticky;
     top: 0;
     display:grid;
-    grid-gap:5px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50px;
     grid-template-areas: 
-      ". st ."; 
+      "st st dd"; 
     width:100%;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     z-index:1;
 
 }
 .topbar a{
   color:#fff;
 }
-.sticky{
+.sticky1{
   grid-area:st;
   text-align:center;
-  background-color:rgb(143, 26, 26);
-  color:#fff;
-  border-radius: 0 0 15px 15px;
+  color:white;
   font-weight:900;
+  border-bottom:3px solid #333;
+}
+.sticky2{
+  grid-area:dd;
+  text-align:center;
+  color:white;
+  font-weight:900;
+  border-bottom:3px solid #333 ;
+  
 }
   .nav > div {
     display: flex;
@@ -49,8 +57,8 @@ html, body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px 60px auto;
     grid-template-areas: 
-      "h h h hrs hrs hrs hrs hrs hrs o o o"
-      "s s s hrs hrs hrs hrs hrs hrs dl dl dl"
+      "h h h . . . . . hrs hrs hrs hrs"
+      "s s s . . . . . hrs hrs hrs hrs"
       "n n n n n n n n n n n n";      
 }
 
@@ -130,8 +138,11 @@ html, body {
   font-size:32px;
   grid-area:mt;
   text-transform: uppercase;
+  font-family: 'Alfa Slab One', cursive;
   align-items:center;
-  font-weight: 900;
+  color:#333;
+  letter-spacing: .1em;
+  font-weight: 600;
 }
 .menulist{
   grid-area:ml;
@@ -148,8 +159,14 @@ html, body {
   font-weight:700;
   line-height:26px;
 }
-
-
+.price{
+  font-weight:700;
+  font-size:13px;
+  background: rgb(180,58,58);
+  background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .header{
   grid-area: h;
   align-items:flex-end;
@@ -163,6 +180,10 @@ html, body {
 
 .nav1{
   grid-area:n;
+  text-transform: uppercase;
+  font-style:'Open Sans', sans-serif;
+  background: rgb(0,0,0);
+  background: linear-gradient(100deg, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 100%);
 }
 
 
@@ -213,14 +234,19 @@ html, body {
   font-size:2.3em;
   margin:0;
   text-transform:uppercase;
+  font-family: 'Alfa Slab One', cursive;
   letter-spacing: .09em;
+  color:#333;
+  text-align:center;
 }
 
 .hours{
   grid-area: hrs;
   text-align:Center;
   align-items:center;
-  font-size:1.3em;
+  font-family:'Open Sans', serif;
+  font-weight:300;
+  font-size:1.1em;
 }
 
 .subheader{
@@ -233,25 +259,16 @@ line-height:0em;
 font-size:1em;
 color:rgb(46, 46, 46);
 text-transform:uppercase;
-letter-spacing: .6em;
+letter-spacing: .89em;
 text-align:center;
 }
 
 .dashlogo{
-  grid-area:dl;
   height:50px;
   margin-top:0;
 }
 
-.onlineorder{
-  grid-area: o;
-  font-size:1em;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-weight:700;
-  text-align:Center;
-  align-items:flex-end;
-}
+
 
 
 .footer{
