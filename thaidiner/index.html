@@ -6,15 +6,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>THAI HOUSE | LAWRENCE, KANSAS</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/thaidiner/css/style.css">
-        <link rel="stylesheet" href="/thaidiner/css/foundation.css">
         <link rel="stylesheet" href="/thaidiner/css/jquery-backToTop.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/dd3eafd80a.js"></script>
-        <script src="/thaidiner/js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
         <script src="/thaidiner/js/jquery-backToTop.min.js"></script>
 
@@ -34,8 +32,10 @@
                         </div>
                         </div>
                     </div>
-
-            <div class="nav">
+                    <span class="navbar-toggle" id="toggler">
+                            <i class="fas fa-bars"></i>
+                    </span>
+            <div class="nav" id="nav">
                 <div class="header">
                     <p class="maintitle">Thai Diner</p>
                 </div>
@@ -50,8 +50,8 @@
               
                 <div class="nav1">
 
-                        <nav class="hover-underline-menu" data-menu-underline-from-center>
-                                <ul class="menu align-center">
+                        <nav>
+                                <ul class="navlist" id="js-menu">
                                   <li><a href="#starters">Starters</a></li>
                                   <li><a href="#salads">Salads</a></li>
                                   <li><a href="#noodlesandrice">Noodles and Rice</a></li>
@@ -256,5 +256,59 @@
                                                                     
                                                                     </div>                                
                                                     </div>
+                                                    <div class="maincontain" id="beverages">
+                            
+                                                            <div class="menutitle">Beverages</div>
+                                                            <div class="image-pop">
+                                                                    <!-- <img src="img/thaiflower.png" width="272px" height="243px">
+                                                                    <img src="img/thaiflower.png" width="272px" height="243px"> -->
+                                                                </div>
+                                                                    <div class="menulist">
+                                                                                <ul >
+                                                                                <li class="dishtitle">Fresh Basil Stir-Fry | <b class="price">$12.95</b></li>
+                                                                                    <ul>
+                                                                                        <li>Bamboo shoot strip, bell pepper and fresh basil in garlic-brown sauce.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Red Curry Bowl | <b class="price">$12.95</b> <i class="fas fa-pepper-hot" style="color:red"></i></li>
+                                                                                    <ul>
+                                                                                            <li>Bamboo shoot strip, bell pepper, fresh basil, red curry paste and coconut milk.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Curry Paste Passion | <b class="price">$12.95</b> <i class="fas fa-pepper-hot" style="color:red"></i></li>
+                                                                                    <ul>
+                                                                                            <li>Onion, bell pepper, mushroom, and basil in sweet and spicy flavor of Thai red curry paste.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Green Curry Bowl | <b class="price">$12.95</b> <i class="fas fa-pepper-hot" style="color:red"></i></li>
+                                                                                    <ul>
+                                                                                            <li>Bamboo shoot strip, bell pepper, fresh basil, green curry paste and coconut milk.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Cashew Nut Stir-Fry | <b class="price">$12.95</b></li>
+                                                                                    <ul>
+                                                                                            <li>Onion, bell pepper, broccoli, carrot, cashew in fresh garlic-soy sauce.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Yellow Curry Bowl | <b class="price">$12.95</b></li>
+                                                                                    <ul>
+                                                                                            <li>Potato, carrot, yellow onion, yellow curry paste and coconut milk.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Thai Sweet Tropical | <b class="price">$12.95</b></li>
+                                                                                    <ul>
+                                                                                            <li>Pineapple, mango, onion, tomato, and bell pepper in house sweet and sour sauce.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Massaman Curry Bowl | <b class="price">$12.95</b> <i class="fas fa-pepper-hot" style="color:red"></i></li>
+                                                                                    <ul>
+                                                                                            <li>Potato, carrot, roasted peanut, massaman curry paste and coconut milk.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Garden Stir-Fry | <b class="price">$12.95</b></li>
+                                                                                    <ul>
+                                                                                            <li>House vegetables medley in fresh garlic-soy house sauce.</li>
+                                                                                    </ul>
+                                                                                <li class="dishtitle">Panang Curry Bowl | <b class="price">$12.95</b> <i class="fas fa-pepper-hot" style="color:red"></i></li>
+                                                                                    <ul>
+                                                                                            <li>Bell pepper, kaffir lime leaf, panang curry paste and coconut milk.</li>
+                                                                                    </ul>
+                                                                                </ul>
+                                                                            
+                                                                            </div>                                
+                                                            </div>
+                                                    <script src="/thaidiner/js/index.js"></script>
     </body>
 </html>

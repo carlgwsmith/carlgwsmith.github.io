@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Alfa+Slab+One|Open+Sans+Condensed:300,300i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Rubik:400,500,700|Work+Sans:400,500,600&display=swap');
 
 html, body {
   box-sizing: border-box;
@@ -44,23 +44,7 @@ html, body {
   font-size:1.2em;
   
 }
-  .nav > div {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-  }
 
-.nav{
-    display:grid;
-    height: 30%;
-    grid-gap:5px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px 60px auto;
-    grid-template-areas: 
-      "h h h . . . . . hrs hrs hrs hrs"
-      "s s s . . . . . hrs hrs hrs hrs"
-      "n n n n n n n n n n n n";      
-}
 
 .maincontain > div {
   display: flex;
@@ -70,7 +54,7 @@ html, body {
 
 #starters.maincontain{
   display:grid;
-  height: 800px;
+  height: 880px;
   width:100%;
   padding-top:25px;
   grid-template-columns: repeat(12, 1fr);
@@ -96,7 +80,7 @@ html, body {
 
 #noodlesandrice.maincontain{
   display:grid;
-  height: 845px;
+  height: 945px;
   width:100%;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 80px auto;
@@ -135,10 +119,10 @@ html, body {
 }
 
 .menutitle{
-  font-size:32px;
+  font-size:2.5em;
   grid-area:mt;
-  text-transform: uppercase;
-  font-family: 'Alfa Slab One', cursive;
+  /* text-transform: uppercase; */
+  font-family: 'Rubik', sans-serif;
   align-items:center;
   color:#333;
   letter-spacing: .1em;
@@ -149,19 +133,20 @@ html, body {
   align-items:flex-start;
 }
 .menulist ul{
-  padding-bottom:18px;
+  padding-bottom:24px;
 }
 .menulist ul li {
   list-style-type: none;
+  font-size:22px;
 }
 .dishtitle{
-  font-size:16px;
+  font-size:20px;
   font-weight:700;
   line-height:26px;
 }
 .price{
   font-weight:700;
-  font-size:13px;
+  font-size:22px;
   background: rgb(180,58,58);
   background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   -webkit-background-clip: text;
@@ -175,8 +160,24 @@ html, body {
 
 /* Nav */
 
+.nav > div {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
 
-
+.nav{
+  display:grid;
+  height: 30%;
+  grid-gap:5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 60px auto;
+  grid-template-areas: 
+    ". h h h . . . . hrs hrs hrs hrs"
+    ". s s s . . . . hrs hrs hrs hrs"
+    "n n n n n n n n n n n n";
+    
+}
 
 .nav1{
   grid-area:n;
@@ -185,13 +186,29 @@ html, body {
   background: rgb(0,0,0);
   background: linear-gradient(100deg, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 100%);
   padding:1.2rem 1.5rem;
+  display:none;
+  
+
 }
-.menu a{
+.navlist{
+  display:flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navlist a{
   color:#fff;
-
+  font-size:21px;
+  text-decoration: none;
+}
+.navlist li{
+  text-align:center;
+  margin:.5em 3em auto;
 }
 
-
+.navbar-toggle{
+  display:none;
+}
 
 /* End of Nav */
 
@@ -227,7 +244,7 @@ line-height:0em;
 font-size:1em;
 color:rgb(46, 46, 46);
 text-transform:uppercase;
-letter-spacing: .89em;
+letter-spacing: 1em;
 text-align:center;
 }
 
@@ -247,18 +264,35 @@ text-align:center;
 
 @media (max-width:900px) {
   .nav{
-    display:grid;
-    height: 23%;
+    display:none;
+    height: 30%;
     grid-gap:5px;
-    grid-template-columns: repeat (12,1fr);
-    grid-template-rows: 40px 30px 30px 30px 50px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 120px 60px auto;
     grid-template-areas: 
-      "h h h h h h h h h h h h"
-      "s s s s s s s s s s s s"
-      "hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs"
-      ". . . . . . . . . . . . "
-      "n n n n n n n n n n n n"
+      ". h h h . . . . hrs hrs hrs hrs"
+      ". s s s . . . . hrs hrs hrs hrs"
+      "n n n n n n n n n n n n";   
   }
+  .navactive{
+    display:grid;
+  }
+  .navlist{
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .navbar-toggle{
+    display:block;
+    position:absolute;
+    top:10px;
+    right:20px;
+    cursor: pointer;
+    color:#333;
+    font-size:25px;
+    z-index:1;
+  }
+
   .tabContainer .buttonContainer button{
     height:100%;
     font-size:1em;
@@ -297,29 +331,33 @@ text-align:center;
     padding-bottom:.5em;
   }
 
-  .nav{
-    display: grid;
-    height: 57%;
-    grid-gap: 5px;
-    grid-template-columns: repeat (12,1fr);
-    grid-template-rows: 70px 40px 63px 11px 85px;
-    grid-template-areas: 
-    
-    "h h h h h h h h h h h h"
-      "s s s s s s s s s s s s"
-      "hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs"
-      ". . . . . . . . . . . . "
-      "n n n n n n n n n n n n";
-      
-  }
+
   .nav1{
-    font-size:.5em;
+    font-size:.3em;
   }
   .dashlogo a img{
     height:25px;
   }
   .dashlogo{
     height:25px;
+  }
+  #starters.maincontain{
+    height: 1150px;
+  }
+  #salads.maincontain{
+    height: 450px;
+  }
+  
+  #noodlesandrice.maincontain{
+    height: 1260px;
+  }
+  
+  #stirfry.maincontain{
+    height: 1200px;
+  }
+  
+  #beverage.maincontain{
+    height: 100%;
   }
   .tabContainer .buttonContainer button{
     height:100%;
@@ -344,5 +382,9 @@ text-align:center;
     letter-spacing: .3em;
     text-align:center;
     }
-
+    .menutitle{
+      font-size:2em;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+    }
   }
