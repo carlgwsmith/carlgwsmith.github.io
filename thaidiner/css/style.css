@@ -14,6 +14,7 @@ html, body {
   }
 .topbar{
   position: sticky;
+  position:-webkit-sticky;
   top: 0;
   display:none;
   grid-template-columns: repeat(4, 1fr);
@@ -150,6 +151,7 @@ html, body {
 
 .nav{
   position: sticky;
+  position:-webkit-sticky;
   top:0;
   display:grid;
   height: 30%;
