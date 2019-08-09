@@ -15,11 +15,11 @@ html, body {
 .topbar{
   position: sticky;
   top: 0;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  display:none;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50px;
   grid-template-areas: 
-      "st . dd"; 
+      "st st dd dd"; 
   width:100%;
   border-bottom:3px solid #333;
   background: rgb(131,58,180);
@@ -28,23 +28,7 @@ html, body {
 }
 .topbar a{
   color:#fff;
-}
-.sticky1{
-  grid-area:st;
-  color:white;
-  font-weight:900;
-  font-size:1.2em;
-  
-}
-.sticky2{
-  grid-area:dd;
-  text-align:center;
-  color:white;
-  font-weight:900;
-  font-size:1.2em;
-  
-}
-
+} 
 
 .maincontain > div {
   display: flex;
@@ -122,7 +106,7 @@ html, body {
   font-size:2.5em;
   grid-area:mt;
   /* text-transform: uppercase; */
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Alfa Slab one', cursive;
   align-items:center;
   color:#333;
   letter-spacing: .1em;
@@ -150,12 +134,10 @@ html, body {
   background: rgb(180,58,58);
   background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   -webkit-background-clip: text;
+  background-clip:text;
   -webkit-text-fill-color: transparent;
 }
-.header{
-  grid-area: h;
-  align-items:flex-end;
-}
+
 
 
 /* Nav */
@@ -167,26 +149,52 @@ html, body {
 }
 
 .nav{
+  position: sticky;
+  top:0;
   display:grid;
   height: 30%;
-  grid-gap:5px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 80px 60px auto;
+  grid-template-rows: 50px 80px 60px auto;
   grid-template-areas: 
-    ". h h h . . . . hrs hrs hrs hrs"
-    ". s s s . . . . hrs hrs hrs hrs"
+   "st st st st st st dd dd dd dd dd dd"
+    "h h h h e e e e hrs hrs hrs hrs"
+    "s s s s e e e e hrs hrs hrs hrs"
     "n n n n n n n n n n n n";
-    
 }
+.emptystyle{
+  grid-area: e;
+  background-color:white;
+}
+.sticky1{
+  grid-area:st;
+  color:white;
+  font-weight:900;
+  align-items: center;
+  font-size:1.2em;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.sticky1 a {
+  color:white;
+}
+
+.sticky2{
+  grid-area:dd;
+  text-align:center;
+  align-items: center;
+  color:white;
+  font-weight:900;
+  font-size:1.2em;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1) 100%);}
 
 .nav1{
   grid-area:n;
   text-transform: uppercase;
-  font-style:'Open Sans', sans-serif;
+  font-family:'Open Sans', sans-serif;
   background: rgb(0,0,0);
   background: linear-gradient(100deg, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 100%);
   padding:1.2rem 1.5rem;
-  display:none;
   
 
 }
@@ -198,21 +206,17 @@ html, body {
 
 .navlist a{
   color:#fff;
-  font-size:21px;
+  font-size:16px;
   text-decoration: none;
 }
 .navlist li{
   text-align:center;
-  margin:.5em 3em auto;
+  margin:.5em 2em auto;
 }
 
 .navbar-toggle{
   display:none;
 }
-
-/* End of Nav */
-
-
 
 .maintitle{
   font-weight:700;
@@ -229,14 +233,20 @@ html, body {
   grid-area: hrs;
   text-align:right;
   align-items:center;
-  font-family:'Open Sans', serif;
+  font-family:'Open Sans', sans-serif;
   font-weight:300;
   font-size:1.1em;
+  background-color:#fff;
 }
-
+.header{
+  grid-area: h;
+  align-items:flex-end;
+  background-color:#fff;
+}
 .subheader{
 grid-area: s;
 line-height:0em;
+background-color:#fff;
 }
 
 .subtitle{
@@ -248,12 +258,8 @@ letter-spacing: 1em;
 text-align:center;
 }
 
-.dashlogo{
-  height:50px;
-  margin-top:0;
-}
 
-
+/* End of Nav */
 
 
 .footer{
@@ -263,25 +269,29 @@ text-align:center;
 
 
 @media (max-width:900px) {
+  .topbar{
+    display:grid;
+  }
+  .sticky1,.sticky2{
+    font-size:1em;
+    background: none;
+  }
+  .sticky2{
+    background: none;
+  }
   .nav{
     display:none;
-    height: 30%;
-    grid-gap:5px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 120px 60px auto;
-    grid-template-areas: 
-      ". h h h . . . . hrs hrs hrs hrs"
-      ". s s s . . . . hrs hrs hrs hrs"
-      "n n n n n n n n n n n n";   
   }
   .navactive{
     display:grid;
   }
+
   .navlist{
     display:flex;
     flex-direction: column;
     list-style-type: none;
   }
+
   .navbar-toggle{
     display:block;
     position:absolute;
@@ -292,27 +302,33 @@ text-align:center;
     font-size:25px;
     z-index:1;
   }
+  
+  .dashlogo img{
+    height:25px;
+  }
 
   .tabContainer .buttonContainer button{
     height:100%;
     font-size:1em;
   }
 
-    .maintitle{
-      font-weight:700;
-      font-size:2.6em;
-      margin:0;
-      text-transform:uppercase;
-      letter-spacing: .12em;
-    }
-    .subtitle{
-      font-weight:300;
-    font-size:1em;
-    color:rgb(46, 46, 46);
+  .maintitle{
+    font-weight:700;
+    font-size:2.6em;
+    margin:0;
     text-transform:uppercase;
-    letter-spacing: .3em;
-    text-align:center;
-    }
+    letter-spacing: .12em;
+  }
+
+  .subtitle{
+    font-weight:300;
+  font-size:1em;
+  color:rgb(46, 46, 46);
+  text-transform:uppercase;
+  letter-spacing: .3em;
+  text-align:center;
+  }
+
 
 }
 @media (max-width:600px) {
@@ -321,14 +337,15 @@ text-align:center;
     grid-template-rows: 50px;
     grid-template-areas: 
         "st st"
-
         "dd dd"; 
   }
   .sticky1,.sticky2{
     font-size:1em;
+    background: none;
   }
   .sticky2{
-    padding-bottom:.5em;
+    background: none;
+    align-items: center;
   }
 
 
@@ -392,15 +409,7 @@ text-align:center;
   @media (max-width:580px) {
     .nav{
       display:none;
-      height: 30%;
-      grid-gap:5px;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 65px 20px 90px auto;
-      grid-template-areas: 
-        ". h h h h h h h h h h ."
-        ". s s s s s s s s s s ."
-        ". hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs ."
-        "n n n n n n n n n n n n";   
+
     }
 
     .navlist{
