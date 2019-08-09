@@ -137,16 +137,16 @@ html, body {
 }
 .menulist ul li {
   list-style-type: none;
-  font-size:22px;
+  font-size:16px;
 }
 .dishtitle{
-  font-size:20px;
+  font-size:18px;
   font-weight:700;
   line-height:26px;
 }
 .price{
   font-weight:700;
-  font-size:22px;
+  font-size:18px;
   background: rgb(180,58,58);
   background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   -webkit-background-clip: text;
@@ -288,7 +288,7 @@ text-align:center;
     top:10px;
     right:20px;
     cursor: pointer;
-    color:#333;
+    color:#fff;
     font-size:25px;
     z-index:1;
   }
@@ -383,8 +383,48 @@ text-align:center;
     text-align:center;
     }
     .menutitle{
-      font-size:2em;
+      font-size:1.5em;
+      line-height:1.5em;
       text-decoration: underline;
-      text-decoration-style: wavy;
+      text-align:center;
+    }
+  }
+  @media (max-width:580px) {
+    .nav{
+      display:none;
+      height: 30%;
+      grid-gap:5px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 65px 20px 90px auto;
+      grid-template-areas: 
+        ". h h h h h h h h h h ."
+        ". s s s s s s s s s s ."
+        ". hrs hrs hrs hrs hrs hrs hrs hrs hrs hrs ."
+        "n n n n n n n n n n n n";   
+    }
+
+    .navlist{
+      padding-inline-start: 0px;
+    }
+    .navactive{
+      display:grid;
+    }
+    .menulist ul li {
+      font-size:.8em;
+    }
+    .menulist ul{
+      padding-inline-start: 15px;
+    }
+    #starters.maincontain{
+      height:880px;
+    }
+    #salads.maincontain{
+      height:350px;
+    }
+    #noodlesandrice.maincontain{
+      height:975px;
+    }
+    #stirfry.maincontain{
+      height:920px;
     }
   }
