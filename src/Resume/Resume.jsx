@@ -47,7 +47,7 @@ export default function Resume() {
                 <div className="sm: col-span-12 lgsm:col-span-6 sm: px-20 sm: py-20 sm: gap-20">
                     <h2 className="font-bold uppercase text-2xl">Education</h2>
                     <div className="mt-5">
-                        <h3 className="text-lg font-semibold">Master of Professional Studies</h3>
+                        <h3 className="text-lg font-semibold">Masters (MPS) - Web Application Development</h3>
                         <h4 className="text-base text-gray-500">Web & Mobile Application Development</h4>
                         <h4 className="text-base text-gray-500">Fort Hays State University | 2021</h4>
                         <p className="text-sm pt-2">
